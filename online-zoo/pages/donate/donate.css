@@ -467,5 +467,9 @@ h1 {
   cursor: pointer;
   background: linear-gradient(113.96deg, #E47209 1.49%, #E47209 101.44%);
 }
+.button-main:active {
+  cursor: pointer;
+  background: linear-gradient(113.96deg, #4B9200 1.49%, #4B9200 101.44%);
+}
 
 /*# sourceMappingURL=donate.css.map */

@@ -9,4 +9,8 @@
         cursor: pointer;
         background: linear-gradient(113.96deg, $hover-color-btn 1.49%, $hover-color-btn 101.44%);
     }
+    &:active {
+        cursor: pointer;
+        background: linear-gradient(113.96deg, #4B9200 1.49%, #4B9200 101.44%);
+    }
 }
