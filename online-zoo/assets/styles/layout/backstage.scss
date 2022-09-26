@@ -1,0 +1,37 @@
+.backstage {
+    background-image: url("../../assets/images/flower.svg");
+    background-repeat: no-repeat;
+    background-position: 1400px 12px;
+
+}
+
+.backstage__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 140px;
+    padding-bottom: 118px;
+}
+
+.backstage__text {
+    width: 40.08%;
+    h2 {
+        margin-bottom: 20px;
+        font-family: $main-font-family-one;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 58px;
+        color: $text-color;
+    }
+    p {
+        font-family: $main-font-family-one;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 135%;
+        color: $text-color;
+    }
+    .question-title {
+        margin: 54px 0 34px;
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,43 @@
+.about {
+    width: 100%;
+    height: 780px;
+    background-image: url("../../assets/images/section1_ft.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.about__container {
+    display: flex;
+    justify-content: end;
+}
+
+.about__content {
+    position: relative;
+    top: 92px;
+    width: 573px;
+    height: 588px;
+    background: url("../../assets/images/Ellipse6.svg") no-repeat;
+}
+.about__inner {
+    width: 500px;
+    float: right;
+}
+.about__text {
+    text-align: center;
+    margin: 74px 0 60px 0;
+
+    font-family: $main-font-family-one;
+    font-weight: 700;
+    font-size: 106px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 80px;
+    span {
+        color: #FFEE2E;
+    }
+}
+.about__button {
+    padding: 16px 99px;
+    margin-left: 103px;
+    border-radius: 25px;
+}

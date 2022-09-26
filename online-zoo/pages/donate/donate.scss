@@ -1,0 +1,32 @@
+$main-color-one: black;
+$main-color-two: #FE9013;
+$text-color: #333B41;
+
+$hover-color-btn: #E47209;
+
+$main-font-family-one: 'Roboto', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+
+@import '../../assets/styles/layout/header.scss';
+@import '../../assets/styles/layout/animal.scss';
+@import '../../assets/styles/layout/feed-friend.scss';
+@import '../../assets/styles/layout/footer.scss';
+
+@import '../../assets/styles/components/menu.scss';
+@import '../../assets/styles/components/button.scss';

@@ -1,0 +1,99 @@
+.testimonials__slider {
+    height: 420px;
+}
+.testimonials__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px; 
+    height: 391px;
+    margin-bottom: 15px;
+}
+.testimonials__card {
+    width: 268px;
+    height: 391px;
+    padding: 15px 14px 19px 16px;
+    background: #F1F3F2;
+    border: solid 2px;
+    border-radius: 20px;
+    border-image: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    border-image-slice: 1;
+}
+.testimonials__data {
+    display: flex;
+}
+.testimonials__photo {
+}
+.testimonials__name-location {
+    margin-left: 10px;
+    .testimonials__name {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #000000;
+    }
+    .testimonials__location-date {
+        display: flex;
+        .testimonials__location {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: #BDBDBD;
+            &::after {
+                content: "•";
+                margin-left: 6px;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 120%;
+                color: #BDBDBD;
+            }
+        }
+        .testimonials__date {
+            margin-left: 6px;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 120%;
+            color: #BDBDBD;
+        }
+    }
+}
+
+
+
+.testimonials__description {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #767474;
+}
+.slider-scroll {
+    width: 599px;
+    margin: 0 auto;
+}
+.scroll {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 599px;
+    height: 8px;
+    border-radius: 5px;
+    background: #F5F7F6;
+    outline: none;
+    -webkit-transition: .2s;
+}
+.scroll::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 115px;
+    height: 6px;
+    border-radius: 5px;
+    background: #FE9013;
+    cursor: pointer;
+}
+
+.scroll::-moz-range-thumb {
+    width: 115px;
+    height: 6px;
+    border-radius: 5px;
+    background: #FE9013;
+    cursor: pointer;
+}

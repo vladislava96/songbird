@@ -1,0 +1,12 @@
+.pets {
+    background: url("../../assets/images/palm_foto.svg") no-repeat -480px 705px, url("../../assets/images/strelitzia.svg") no-repeat 1230px 890px;
+}
+.pets__container {
+    display: flex;
+    flex-direction: column;
+}
+.pets__button {
+    padding: 16px 60px;
+    border-radius: 25px;
+    margin: 80px auto 100px auto;
+}

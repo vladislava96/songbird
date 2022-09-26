@@ -1,0 +1,115 @@
+.footer {
+    background-color: #111115;
+    color: white;
+}
+.footer__container {
+    padding-top: 41px;
+}
+.footer__row1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+.footer__subscription {
+    p {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: #FFFFFF;
+    }
+}
+.footer__button {
+    padding: 16px 50px;
+    border-radius: 5px;
+    a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.footer__row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 44px 0 50px;
+}
+.social-networks {
+    .social-networks__link {
+        list-style-type: none;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        span {
+            margin-left: 12px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #FFFFFF;
+            vertical-align: middle;
+        }
+    } 
+}
+
+.footer__nav {
+    width: 366px;
+}
+
+.footer__designed {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.footer__input-email {
+    width: 228px;
+    margin-top: 14px;
+    margin-right: 10px;
+    padding: 10px;
+    border: solid 0.7px $main-color-two;
+    border-radius: 2px;
+    background-color: transparent;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #BDBDBD;
+    &:focus {
+        outline: none;
+        border: 0.7px solid #4B9200;
+        border-radius: 2px;
+    }
+}
+.footer__input-submit {
+    padding: 10px 39px;
+    background-color: #F1F3F2;
+    border: 1px solid #333B41;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+    transition: all 0.5s ease;
+    &:hover {
+        border: 1px solid #4B9200;
+        color: #4B9200;
+    }
+    &:active {
+        border: 1px solid #4B9200;
+        color: #4B9200;
+    }
+}
+
+.footer__menu {
+    margin-left: 60px;
+}

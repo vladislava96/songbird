@@ -1,0 +1,63 @@
+.header {
+    position: absolute;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color: $main-color-one;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 7.1% 46.1% 46.81%;
+    justify-items: end;
+    align-items: center;
+    height: 100%;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 82px;
+    height: 52px;
+    border: solid 1px white;
+    border-radius: 2px;
+    background: url("../../assets/icons/bamboo.svg") no-repeat 9px 23px;
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: $main-font-family-one;
+        font-weight: 400;
+        font-size: 19px;
+        transition: all 0.5s ease; 
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.header__nav {
+    width: 88.22%;
+}
+
+.header__designed {
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: $main-font-family-one;
+        font-weight: 500;
+        font-size: 16px;
+        transition: all 0.5s ease; 
+        &:hover {
+            cursor: pointer;
+            color: $main-color-two;
+        }
+    }
+}
