@@ -20,6 +20,10 @@
   background-color: black;
 }
 
+.header__donate {
+  position: static;
+}
+
 h1 {
   padding: 0;
   margin: 0;
@@ -79,7 +83,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100% auto;
-  height: 468px;
+  height: 390px;
 }
 
 .feed-friend {
@@ -168,7 +172,13 @@ h1 {
 }
 
 .progress-bar__place {
-  width: 976px;
+  margin-top: 20px;
+}
+
+.progress-bar__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .progress-bar {
@@ -188,41 +198,75 @@ h1 {
   height: 2px;
   background: #72828E;
 }
-.progress-bar .progress-bar__ellipse-row {
+
+.progress-bar__ellipse-row {
   display: flex;
   justify-content: space-between;
-  width: 915px;
+  width: 1045px;
+  z-index: 10;
+  position: relative;
+  left: 50px;
+  top: -28px;
 }
-.progress-bar .progress-bar__ellipse-row .progress-bar__ellipse {
+.progress-bar__ellipse-row .progress-bar__point {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 200px;
+  cursor: pointer;
+}
+.progress-bar__ellipse-row .progress-bar__point .progress-bar__ellipse {
   width: 10px;
   height: 10px;
   background: #FFEE2E;
   border-radius: 50%;
-  cursor: pointer;
+  margin-left: 10px;
 }
-.progress-bar .progress-bar__ellipse-row .progress-bar__ellipse:not(:first-child) {
+.progress-bar__ellipse-row .progress-bar__point .progress-bar__ellipse:not(:first-child) {
   margin-left: 120px;
 }
-.progress-bar .progress-bar__ellipse-row .progress-bar__ellipse:hover {
-  box-shadow: 0 0 0 20px #FE9013, 0 0 0 10px transparent;
-  border-radius: 50%;
-}
-
-.progress-bar__prices {
-  display: flex;
-  justify-content: space-between;
-  width: 976px;
-  margin: 10px auto;
-}
-
-.progress-bar__price {
+.progress-bar__ellipse-row .progress-bar__point .progress-bar__price {
+  margin-top: 19px;
   font-weight: 500;
   font-size: 26px;
   line-height: 140%;
   text-transform: uppercase;
   color: #333B41;
+  transition: all 1s ease;
+}
+.progress-bar__ellipse-row .progress-bar__point:hover .progress-bar__ellipse {
+  box-shadow: 0 0 0 rgba(254, 144, 19, 0.8);
+  animation: pulse1 1s infinite;
+}
+.progress-bar__ellipse-row .progress-bar__point:hover .progress-bar__price {
+  color: #FE9013;
 }
 
+@-webkit-keyframes pulse1 {
+  0% {
+    -webkit-box-shadow: 0 0 0 0px rgba(254, 144, 19, 0.7);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+@keyframes pulse1 {
+  0% {
+    -moz-box-shadow: 0 0 0 0px rgba(254, 144, 19, 0.7);
+    box-shadow: 0 0 0 0px rgba(254, 144, 19, 0.7);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
 .feed-friend__input-number {
   width: 268px;
   padding: 16px 0 16px 9px;
@@ -242,7 +286,7 @@ h1 {
   width: 310px;
   margin: 0 auto;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .feed-friend__input-amount .feed-friend__input-radio {
   margin-top: 25px;
@@ -253,12 +297,6 @@ h1 {
   font-size: 16px;
   line-height: 140%;
   color: #333B41;
-}
-
-[type=radio] {
-  width: 16px;
-  height: 16px;
-  border-color: #FE9013;
 }
 
 .feed-friend__button {
@@ -292,6 +330,14 @@ h1 {
   padding: 16px 50px;
   border-radius: 5px;
 }
+.footer__button a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
 
 .footer__row2 {
   display: flex;
@@ -318,6 +364,10 @@ h1 {
   line-height: 140%;
   color: #FFFFFF;
   vertical-align: middle;
+  transition: all 0.5s ease;
+}
+.social-networks .social-networks__link span:hover {
+  color: #4B9200;
 }
 
 .footer__nav {
@@ -332,7 +382,9 @@ h1 {
 }
 
 .footer__input-email {
+  width: 228px;
   margin-top: 14px;
+  margin-right: 10px;
   padding: 10px;
   border: solid 0.7px #FE9013;
   border-radius: 2px;
@@ -358,10 +410,19 @@ h1 {
   font-size: 16px;
   line-height: 140%;
   color: #000000;
+  transition: all 0.5s ease;
+}
+.footer__input-submit:hover {
+  border: 1px solid #4B9200;
+  color: #4B9200;
 }
 .footer__input-submit:active {
   border: 1px solid #4B9200;
   color: #4B9200;
+}
+
+.footer__menu {
+  margin-left: 60px;
 }
 
 .menu {
@@ -400,11 +461,11 @@ h1 {
   color: white;
   font-size: 16px;
   font-weight: 500;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 .button-main:hover {
   cursor: pointer;
-  background: #E47209;
+  background: linear-gradient(113.96deg, #E47209 1.49%, #E47209 101.44%);
 }
 
 /*# sourceMappingURL=donate.css.map */

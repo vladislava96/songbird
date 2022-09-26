@@ -86,7 +86,13 @@
 }
 
 .progress-bar__place {
-    width: 976px;
+    margin-top: 20px;
+}
+.progress-bar__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 .progress-bar {
     display: flex;
@@ -104,41 +110,80 @@
         height: 2px;
         background: #72828E;
     }
-    .progress-bar__ellipse-row {
+    
+}
+.progress-bar__ellipse-row {
+    display: flex;
+    justify-content: space-between;
+    width: 1045px;
+    z-index: 10;
+    position: relative;
+    left: 50px;
+    top: -28px;
+    .progress-bar__point {
         display: flex;
-        justify-content: space-between;
-        width: 915px;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 200px;
+        cursor: pointer;
         .progress-bar__ellipse {
             width: 10px;
             height: 10px;
             background: #FFEE2E;
             border-radius: 50%;
-            cursor: pointer;
+            margin-left: 10px;
             &:not(:first-child) {
                 margin-left: 120px;
             }
-            &:hover {
-                box-shadow: 0 0 0 rgba(204,169,44, 0.4);
-                animation: pulse 2s infinite;
+            
+        }
+        .progress-bar__price {
+            margin-top: 19px;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #333B41;
+            transition: all 1s ease;
+        }
+        &:hover {
+            .progress-bar__ellipse {
+                box-shadow: 0 0 0 rgba(254, 144, 19, 0.8);
+                animation: pulse1 1s infinite;
+            }
+            .progress-bar__price {
+                color: #FE9013;
             }
         }
     }
 }
-
-.progress-bar__prices {
-    display: flex;
-    justify-content: space-between;
-    width: 976px;
-    margin: 10px auto;
+@-webkit-keyframes pulse1 {
+    0% {
+      -webkit-box-shadow: 0 0 0 0px rgba(254, 144, 19, 0.7);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+}
+@keyframes pulse1 {
+    0% {
+      -moz-box-shadow: 0 0 0 0px rgba(254, 144, 19, 0.7);
+      box-shadow: 0 0 0 0px rgba(254, 144, 19, 0.7);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 20px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
 }
 
-.progress-bar__price {
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 140%;
-    text-transform: uppercase;
-    color: #333B41;
-}
+
 
 .feed-friend__input-number {
     width: 268px;
@@ -159,7 +204,7 @@
     width: 310px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     .feed-friend__input-radio {
         margin-top: 25px;
         margin-bottom: 31px;
