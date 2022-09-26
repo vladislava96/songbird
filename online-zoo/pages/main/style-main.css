@@ -122,7 +122,7 @@ h1 {
 }
 
 .backstage {
-  background-image: url("../../assets/images/flower.svg");
+  background-image: url("../../assets/images/flower.jpg");
   background-repeat: no-repeat;
   background-position: 1400px 12px;
 }
@@ -159,7 +159,7 @@ h1 {
 }
 
 .pets {
-  background: url("../../assets/images/palm_foto.svg") no-repeat -480px 705px, url("../../assets/images/strelitzia.svg") no-repeat 1230px 890px;
+  background: url("../../assets/images/palm_foto.svg") no-repeat -480px 707px, url("../../assets/images/strelitzia.svg") no-repeat 1230px 890px;
 }
 
 .pets__container {
@@ -359,6 +359,10 @@ h3 {
   line-height: 140%;
   color: #FFFFFF;
   vertical-align: middle;
+  transition: all 0.5s ease;
+}
+.social-networks .social-networks__link span:hover {
+  color: #4B9200;
 }
 
 .footer__nav {
@@ -462,6 +466,7 @@ h3 {
   height: 62px;
   border-radius: 50%;
 }
+
 .slider__cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -472,15 +477,19 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 366px;
+  align-items: center;
+  width: 368px;
   height: 426px;
   border: solid 1px #FE9013;
   border-radius: 5px;
-  overflow: hidden;
+  transition: all 1s ease;
 }
 .slider__cards .slider__card .slider__card-image {
   width: 366px;
   height: 366px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 1s ease;
 }
 .slider__cards .slider__card .slider__card-image img {
   width: 100%;
@@ -489,6 +498,8 @@ h3 {
 .slider__cards .slider__card .slider__card-description {
   display: flex;
   justify-content: space-between;
+  width: 338px;
+  transition: all 1s ease;
 }
 .slider__cards .slider__card .slider__card-description-text {
   display: flex;
@@ -501,6 +512,7 @@ h3 {
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+  transition: all 1s ease;
 }
 .slider__cards .slider__card .slider__card-description-text .slider__card-location {
   margin-left: 16px;
@@ -509,6 +521,7 @@ h3 {
   font-size: 15px;
   line-height: 16px;
   color: #000000;
+  transition: all 1s ease;
 }
 .slider__cards .slider__card .slider__card-banana {
   width: 33px;
@@ -522,6 +535,22 @@ h3 {
   margin-right: 8px;
   background: url("../../assets/icons/meet-fish_icon.svg");
 }
+.slider__cards .slider__card:hover .slider__card-description {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(-50px);
+}
+.slider__cards .slider__card:hover .slider__card-image {
+  width: 386px;
+  height: 386px;
+  transform: translateY(-15px);
+}
+.slider__cards .slider__card:hover .slider__card-name {
+  color: #FFFFFF;
+}
+.slider__cards .slider__card:hover .slider__card-location {
+  margin-bottom: 0px;
+  color: #FFFFFF;
+}
 
 .button-main {
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
@@ -529,11 +558,11 @@ h3 {
   color: white;
   font-size: 16px;
   font-weight: 500;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 .button-main:hover {
   cursor: pointer;
-  background: #E47209;
+  background: linear-gradient(113.96deg, #E47209 1.49%, #E47209 101.44%);
 }
 
 .testimonials__slider {

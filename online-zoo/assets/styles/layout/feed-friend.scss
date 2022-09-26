@@ -22,9 +22,6 @@
         color: #FE9013;
     }
 }
-.feed-friend__container {
-}
-
 .feed-friend__feed {
     margin-top: 60px;
     padding: 40px 92px 62px;
@@ -121,12 +118,13 @@
                 margin-left: 120px;
             }
             &:hover {
-                box-shadow: 0 0 0 20px #FE9013, 0 0 0 10px transparent;
-                border-radius: 50%;
+                box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+                animation: pulse 2s infinite;
             }
         }
     }
 }
+
 .progress-bar__prices {
     display: flex;
     justify-content: space-between;
@@ -173,51 +171,6 @@
         color: #333B41;
     }
 }
-[type=radio] {
-    width: 16px;
-    height: 16px;
-    border-color: #FE9013;
-}
-// [type=radio] {
-//     position: absolute;
-//     z-index: -1;
-//     opacity: 0;
-// }
-// [type=radio]+label {
-//     display: inline-flex;
-//     align-items: flex-end;
-//     user-select: none;
-// }
-// [type=radio]+label::before {
-//   content: '';
-//   display: inline-block;
-//   width: 16px;
-//   height: 16px;
-//   border: 1px solid #FE9013;
-//   border-radius: 50%;
-
-//   margin-right: 9px;
-
-//   cursor: pointer;
-// }
-// [type=radio]:checked+label::before {
-//     border-color: #4B9200;
-//     background-color: #4B9200;
-//     background-image: url("../../assets/icons/check-radio.svg");
-// }
-// [type=radio]:not(:disabled):not(:checked)+label:hover::before {
-//     border-color: #FE9013;
-// }
-// [type=radio]:not(:disabled):active+label::before {
-//     background-color: #4B9200;
-//     border-color: #4B9200;
-// }
-// [type=radio]:focus:not(:checked)+label::before {
-//     border-color: #FE9013;
-// }
-// [type=radio]:disabled+label::before {
-//     background-color: #828282;
-// }
 
 .feed-friend__button {
     padding: 16px 74px;
