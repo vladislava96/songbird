@@ -281,6 +281,11 @@ h1 {
   line-height: 140%;
   color: #929699;
 }
+.feed-friend__input-number:focus {
+  outline: none;
+  border: 0.7px solid #4B9200;
+  color: #4B9200;
+}
 
 .feed-friend__input-amount {
   width: 310px;
