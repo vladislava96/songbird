@@ -78,12 +78,10 @@ h1 {
   color: #FE9013;
 }
 
-.animal {
-  background-image: url("../../assets/images/panda_bg.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 100% auto;
-  height: 390px;
+.animal__bg {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .feed-friend {
