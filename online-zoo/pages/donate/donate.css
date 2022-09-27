@@ -362,6 +362,10 @@ h1 {
   align-items: center;
   text-decoration: none;
 }
+.social-networks .social-networks__link a:hover circle {
+  transition: all 0.5s ease;
+  fill: #4B9200;
+}
 .social-networks .social-networks__link span {
   margin-left: 12px;
   font-weight: 400;
