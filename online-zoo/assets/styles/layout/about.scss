@@ -4,6 +4,11 @@
     background-image: url("../../assets/images/section1_ft.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
+    @media(max-width: 1000px) {
+        height: 584px;
+        background-size: auto 100%;
+        background-position:-100px;
+    }
 }
 
 .about__container {
@@ -17,10 +22,21 @@
     width: 573px;
     height: 588px;
     background: url("../../assets/images/Ellipse6.svg") no-repeat;
+
+    @media(max-width: 1000px) {
+        background: url("../../assets/images/1000px/Ellipse6-1000px.svg") no-repeat;
+        top: 69px;
+        height: 469px;
+        width: 458px;
+        margin-right: 55px;
+    }
 }
 .about__inner {
     width: 500px;
     float: right;
+    @media(max-width: 1000px) {
+        width: 400px;
+    }
 }
 .about__text {
     text-align: center;
@@ -35,9 +51,18 @@
     span {
         color: #FFEE2E;
     }
+    @media(max-width: 1000px) {
+        font-size: 85px;
+        margin: 53px 0 43px;
+        line-height: 75%;
+    }
 }
 .about__button {
-    padding: 16px 99px;
+    padding: 16px 92px;
     margin-left: 103px;
     border-radius: 25px;
+    @media(max-width: 1000px) {
+        margin-left: 49px;
+        padding: 18px 92px;
+    }
 }

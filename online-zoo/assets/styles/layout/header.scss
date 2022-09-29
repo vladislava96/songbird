@@ -4,6 +4,7 @@
     height: 80px;
     width: 100%;
     background-color: $main-color-one;
+    z-index: 10;
 }
 .header__donate {
     position: static
@@ -22,7 +23,11 @@ h1 {
     justify-items: end;
     align-items: center;
     height: 100%;
+    @media (max-width: 1000px) {
+        grid-template-columns: 8.72% 52.55% 38.72%;
+    }
 }
+
 
 .header__logo {
     display: flex;
@@ -48,7 +53,11 @@ h1 {
 
 .header__nav {
     width: 88.22%;
+    @media (max-width: 1000px) {
+        width: 87.24%;
+    }
 }
+
 
 .header__designed {
     a {

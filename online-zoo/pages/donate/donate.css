@@ -7,17 +7,18 @@
   font-family: "Roboto", sans-serif;
 }
 
-.container {
-  width: 1160px;
-  margin: 0 auto;
+@media (max-width: 1000px) {
+  .container {
+    width: 94%;
+  }
 }
-
 .header {
   position: absolute;
   top: 0;
   height: 80px;
   width: 100%;
   background-color: black;
+  z-index: 10;
 }
 
 .header__donate {
@@ -37,6 +38,11 @@ h1 {
   justify-items: end;
   align-items: center;
   height: 100%;
+}
+@media (max-width: 1000px) {
+  .header__container {
+    grid-template-columns: 8.72% 52.55% 38.72%;
+  }
 }
 
 .header__logo {
@@ -63,6 +69,11 @@ h1 {
 
 .header__nav {
   width: 88.22%;
+}
+@media (max-width: 1000px) {
+  .header__nav {
+    width: 87.24%;
+  }
 }
 
 .header__designed a {
@@ -328,6 +339,11 @@ h1 {
   line-height: 120%;
   color: #FFFFFF;
 }
+@media (max-width: 1000px) {
+  .footer__subscription {
+    margin-right: 32px;
+  }
+}
 
 .footer__button {
   padding: 16px 50px;
@@ -380,12 +396,20 @@ h1 {
 .footer__nav {
   width: 366px;
 }
+@media (max-width: 1000px) {
+  .footer__nav {
+    width: 332px;
+  }
+}
 
 .footer__designed {
   font-weight: 100;
   font-size: 16px;
   line-height: 130%;
   color: #FFFFFF;
+}
+.footer__designed .footer__designed-text-1 {
+  margin-bottom: 10px;
 }
 
 .footer__input-email {
@@ -430,6 +454,11 @@ h1 {
 
 .footer__menu {
   margin-left: 60px;
+}
+@media (max-width: 1000px) {
+  .footer__menu {
+    margin-left: 50px;
+  }
 }
 
 .menu {

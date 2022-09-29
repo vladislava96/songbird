@@ -65,7 +65,11 @@
             <div class="container backstage__container">
                 <div class="backstage__content">
                     <div class="backstage__bamboo-cap">
-                        <img src="../../assets/images/bamboo-cap.jpg" alt="Bamboo cap">
+                        <picture>
+                            <source media="(max-width: 1000px)" srcset="../../assets/images/1000px/bamboo-cap1000px.jpg">
+                            <source media="(min-width: 1001px)" srcset="../../assets/images/bamboo-cap.jpg">
+                            <img src="../../assets/images/bamboo-cap.jpg" alt="Bamboo cap">
+                          </picture>
                     </div>
                     <div class="backstage__text">
                         <h2>The Backstage of the Wilderness World.</h2>
@@ -126,6 +130,14 @@
                                 <div class="slider__card-banana"></div>
                             </div>
                         </div>
+                        <div class="slider__nav__buttons_1000">
+                            <div class="slider__button slider__button_prev button-main">
+                                <img src="../../assets/icons/prev.svg">
+                            </div>
+                            <div class="slider__button slider__button_next button-main">
+                                <img src="../../assets/icons/next.svg">
+                            </div>
+                        </div>
                         <div class="slider__card">
                             <div class="slider__card-image">
                                 <img src="../../assets/images/sloth.jpg" alt="Two-toed Sloth">
@@ -181,9 +193,7 @@
                     </p>
                     <p class="text-3">
                         Even though the zoo has reopened, we need you now more than ever to 
-                        help us deal with these problems. Please consider
-                        <br>
-                        a gift to our <a href="../donate/donate.html">Emergency Support Fund </a>. 
+                        help us deal with these problems. Please consider a gift to our <a href="../donate/donate.html">Emergency Support Fund </a>. 
                     </p>
                 </div>
                 
@@ -424,7 +434,7 @@
                     </ul>
                 </nav>
                 <div class="footer__designed">
-                    <p>Designed by Alisa Samborskaya</p>
+                    <p class="footer__designed-text-1">Designed by Alisa Samborskaya</p>
                     <p>©RSSchool & ©Yem Digital 2021</p>
                 </div>
             </div>

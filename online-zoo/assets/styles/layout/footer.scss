@@ -17,6 +17,9 @@
         line-height: 120%;
         color: #FFFFFF;
     }
+    @media(max-width: 1000px) {
+        margin-right: 32px;
+    }
 }
 .footer__button {
     padding: 16px 50px;
@@ -72,6 +75,9 @@
 
 .footer__nav {
     width: 366px;
+    @media(max-width: 1000px) {
+        width: 332px;
+    }
 }
 
 .footer__designed {
@@ -79,6 +85,9 @@
     font-size: 16px;
     line-height: 130%;
     color: #FFFFFF;
+    .footer__designed-text-1 {
+        margin-bottom: 10px;
+    }
 }
 .footer__input-email {
     width: 228px;
@@ -123,4 +132,7 @@
 
 .footer__menu {
     margin-left: 60px;
+    @media(max-width: 1000px) {
+        margin-left: 50px;
+    }
 }

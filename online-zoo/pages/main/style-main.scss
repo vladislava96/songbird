@@ -18,9 +18,14 @@ $main-font-family-one: 'Roboto', sans-serif;
 }
 
 .container {
-    width: 1160px;
+    width: 72.5%;
     margin: 0 auto;
 }
+@media(max-width: 1000px) {
+    .container { 
+        width: 94%;
+    }
+} 
 
 
 @import '../../assets/styles/layout/header.scss';

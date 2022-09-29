@@ -8,9 +8,14 @@
 .backstage__content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding-top: 140px;
     padding-bottom: 118px;
+    @media(max-width: 1000px) {
+        padding-top: 100px;
+        padding-bottom: 145px; 
+    }
 }
 
 .backstage__text {
@@ -29,9 +34,15 @@
         font-size: 16px;
         line-height: 135%;
         color: $text-color;
+        @media(max-width: 1000px) {
+            line-height: 130%;
+        }
     }
     .question-title {
         margin: 54px 0 34px;
         font-size: 24px;
+    }
+    @media(max-width: 1000px) {
+        width: 454px;
     }
 }

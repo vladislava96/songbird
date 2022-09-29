@@ -2,14 +2,20 @@
     padding-top: 69px;
     padding-bottom: 100px;
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    @media(max-width: 1000px) {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
 }
 .pick-friend__container {
     text-align: center;
-    height: 835px;
     background-color: rgba(253, 253, 255, 0.52);
     border-radius: 20px;
     padding-top: 41px;
     margin: 0 auto;
+    @media(max-width: 1000px) {
+        padding-top: 30px;
+    }
     .pick-friend__title {
         font-weight: 400;
         font-size: 48px;
@@ -22,6 +28,9 @@
         font-size: 36px;
         line-height: 130%;
         color: #333B41;
+        @media(max-width: 1000px) {
+            margin: 40px 0;
+        }
     }
 }
 .pick-friend__text {
@@ -33,6 +42,9 @@
         line-height: 29px;
         color: #333B41;
         margin: 30px 0px 40px 0;
+        @media(max-width: 1000px) {
+            margin: 20px 0;
+        }
     }
     .text-2 {
         font-weight: 500;
@@ -40,17 +52,27 @@
         line-height: 21px;
         color: #333B41;
         margin-bottom: 10px;
+        @media(max-width: 1000px) {
+            margin-right: 80px;
+        }
     }
     .text-3 {
         font-weight: 400;
         font-size: 16px;
         line-height: 21px;
         color: #333B41;
+        margin-right: 100px;
+        @media(max-width: 1000px) {
+            margin-right: 80px;
+        }
         a {
             color:#333B41;
             text-decoration: none;
             border-bottom: solid 1px #FE9013;
         }
+    }
+    @media(max-width: 1000px) {
+        margin-left: 49px;
     }
 }
 .pick-friend__stages {
@@ -94,5 +116,8 @@
 .pick-friend__button {
     padding: 16px 75px;
     border-radius: 25px;
-    margin: 60px auto 0;
+    margin: 60px auto 60px;
+    @media(max-width: 1000px) {
+        margin: 70px auto 50px; 
+    }
 }
