@@ -17,6 +17,10 @@ $main-font-family-one: 'Roboto', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
 
+.container {
+    width: 72.5%;
+    margin: 0 auto;
+}
 @media(max-width: 1000px) {
     .container { 
         width: 94%;

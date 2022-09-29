@@ -2,11 +2,17 @@
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     padding-top: 40px;
     padding-bottom: 180px;
+    @media(max-width: 1000px) {
+        padding-bottom: 30px;
+    }
     .feed-friend__title1 {
         font-weight: 400;
         font-size: 36px;
         line-height: 130%;
         color: #FFFFFF;
+        @media(max-width: 1000px) {
+            margin-right: 100px;
+        }
     }
     p {
         margin: 10px 0 40px;
@@ -14,6 +20,9 @@
         font-size: 16px;
         line-height: 140%;
         color: #FFFFFF;
+        @media(max-width: 1000px) {
+            margin: 30px 0 40px;
+        }
     }
     .feed-friend__title2 {
         font-weight: 400;
@@ -33,6 +42,10 @@
     font-size: 16px;
     line-height: 140%;
     color: #333B41;
+    @media(max-width: 1000px) {
+        padding: 20px 44px 46px 47px;
+        margin-top: 40px;
+    }
     h2 {
         font-weight: 400;
         font-size: 48px;
@@ -42,15 +55,25 @@
     }
     .feed-friend__subtitle-h2 {
         margin: 20px 0 60px;
+        font-weight: 400;
         font-size: 24px;
         line-height: 120%;
+        color: #333B41;
+        @media(max-width: 1000px) {
+            margin: 10px 0 60px;
+        }
     }
     p {
         margin: 48px 0 17px;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 16px;
         line-height: 140%;
-        color: #333B41;
+        color: #000000;
+        @media(max-width: 1000px) {
+            margin: 48px 0 17px 20px;
+            font-weight: 400;
+            color: #000000;
+        }
     }
     .feed-friend__diet-day {
         display: flex;
@@ -103,12 +126,18 @@
     background: #404950;
     border-radius: 2px;
     margin: 0 auto;
+    @media(max-width: 1000px) {
+        width: 810px;
+    }
     .progress-bar__line {
         display: flex;
         align-items: center;
         width: 915px;
         height: 2px;
         background: #72828E;
+        @media(max-width: 1000px) {
+            width: 785px;
+        }
     }
     
 }
@@ -120,6 +149,10 @@
     position: relative;
     left: 50px;
     top: -28px;
+    @media(max-width: 1000px) {
+        width: 890px;
+        left: 40px;
+    }
     .progress-bar__point {
         display: flex;
         flex-direction: column;
