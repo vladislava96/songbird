@@ -9,6 +9,11 @@
         background-size: auto 100%;
         background-position:-100px;
     }
+    @media(max-width: 640px) {
+        height: 373px;
+        background-image: url("../../assets/images/640px/Giant-Panda-640px.jpg");
+        background-position: 0px;
+    }
 }
 
 .about__container {
@@ -30,12 +35,23 @@
         width: 458px;
         margin-right: 55px;
     }
+    @media(max-width: 640px) {
+        background: url("../../assets/images/640px/Ellipse6-640px.svg") 300px 0px no-repeat;
+        top: 43px;
+        height: auto;
+        width: 458px;
+        margin-right: 0px;
+        width: 600px;
+    }
 }
 .about__inner {
     width: 500px;
     float: right;
     @media(max-width: 1000px) {
         width: 400px;
+    }
+    @media(max-width: 640px) {
+        width: 600px;
     }
 }
 .about__text {
@@ -56,6 +72,13 @@
         margin: 53px 0 43px;
         line-height: 75%;
     }
+    @media(max-width: 640px) {
+        font-weight: 700;
+        font-size: 54.2894px;
+        line-height: 75%;
+        width: 255.64px;
+        margin: 39px 0 0 348px;
+    }
 }
 .about__button {
     padding: 16px 92px;
@@ -64,5 +87,9 @@
     @media(max-width: 1000px) {
         margin-left: 49px;
         padding: 18px 92px;
+    }
+    @media(max-width: 640px) {
+        margin-top: -10px;
+        margin-left: 0px;
     }
 }

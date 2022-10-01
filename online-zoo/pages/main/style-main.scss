@@ -20,12 +20,14 @@ $main-font-family-one: 'Roboto', sans-serif;
 .container {
     width: 72.5%;
     margin: 0 auto;
-}
-@media(max-width: 1000px) {
-    .container { 
+    @media(max-width: 1000px) {
         width: 94%;
     }
-} 
+    @media(max-width: 640px) {
+        width: 93.75%;
+    }  
+}
+
 
 
 @import '../../assets/styles/layout/header.scss';
@@ -40,5 +42,6 @@ $main-font-family-one: 'Roboto', sans-serif;
 @import '../../assets/styles/components/slider.scss';
 @import '../../assets/styles/components/button.scss';
 @import '../../assets/styles/components/testimonials-slider.scss';
+@import '../../assets/styles/components/burger-menu.scss';
 
 

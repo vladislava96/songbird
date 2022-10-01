@@ -1,7 +1,10 @@
 .pets {
     background: url("../../assets/images/palm_foto.svg") no-repeat -480px 707px, url("../../assets/images/strelitzia.svg") no-repeat 1230px 890px;
     @media(max-width: 1000px) {
-        background: url("../../assets/images/1000px/palm_foto-1000px.svg") no-repeat -190px 875px, url("../../assets/images/1000px/strelitzia-1000px.svg") no-repeat 760px 900px;
+        background: url("../../assets/images/1000px/palm_foto-1000px.svg") no-repeat -190px 940px, url("../../assets/images/1000px/strelitzia-1000px.svg") no-repeat 760px 960px;
+    }
+    @media(max-width: 640px) {
+        background: url("../../assets/images/1000px/palm_foto-1000px.svg") -200px 900px / 385px 202px  no-repeat , url("../../assets/images/1000px/strelitzia-1000px.svg") 470px 965px / 175px 131px no-repeat;
     }
 }
 .pets__container {

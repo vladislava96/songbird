@@ -46,6 +46,10 @@
         padding: 20px 44px 46px 47px;
         margin-top: 40px;
     }
+    @media(max-width: 640px) {
+        padding: 20px 0 46px;
+        margin-top: 40px;
+    }
     h2 {
         font-weight: 400;
         font-size: 48px;
@@ -61,6 +65,9 @@
         color: #333B41;
         @media(max-width: 1000px) {
             margin: 10px 0 60px;
+        }
+        @media(max-width: 640px) {
+            text-align: center;
         }
     }
     p {
@@ -129,6 +136,9 @@
     @media(max-width: 1000px) {
         width: 810px;
     }
+    @media(max-width: 640px) {
+        width: 600px;
+    }
     .progress-bar__line {
         display: flex;
         align-items: center;
@@ -137,6 +147,9 @@
         background: #72828E;
         @media(max-width: 1000px) {
             width: 785px;
+        }
+        @media(max-width: 640px) {
+            width: 524px;
         }
     }
     
@@ -153,12 +166,26 @@
         width: 890px;
         left: 40px;
     }
+    @media(max-width: 640px) {
+        width: 590px;
+        left: 5px;
+    }
     .progress-bar__point {
         display: flex;
         flex-direction: column;
         margin-top: 10px;
         width: 200px;
         cursor: pointer;
+        &:nth-child(-n+3) {
+            @media(max-width: 640px) {
+                display: none;
+            }
+        }
+        &:last-child{
+            @media(max-width: 640px) {
+                width: 100px;
+            }
+        }
         .progress-bar__ellipse {
             width: 10px;
             height: 10px;
@@ -167,6 +194,9 @@
             margin-left: 10px;
             &:not(:first-child) {
                 margin-left: 120px;
+            }
+            @media(max-width: 640px) {
+                margin-left: 25px;
             }
             
         }

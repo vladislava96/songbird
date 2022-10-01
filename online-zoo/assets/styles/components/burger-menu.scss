@@ -1,0 +1,91 @@
+.header__burger-menu-btn {
+    @media (max-width: 640px) {
+        justify-self: end;
+    }
+    @media (min-width: 641px) {
+        display: none;
+    }
+}
+
+.burger-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 10px 40px;
+    background-color: #FFFFFF;
+    width: 640px;
+    transition: all 1s ease; 
+    transform: translateX(640px);
+    @media(min-width: 321px) {
+        display: none;
+    }
+}
+.header__logo_burger-menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    width: 65.6px;
+    height: 41.6px;
+
+    border: solid 1px $main-color-two;
+    border-radius: 2px;
+    background: url("../../assets/icons/640px/bamboo_burger-menu.svg") no-repeat;
+    background-size: 7px;
+    background-position: 9px 22px;
+
+    a {
+        text-decoration: none;
+        color: $main-color-two;
+        font-family: $main-font-family-one;
+        transition: all 0.5s ease; 
+        &:hover {
+            cursor: pointer;
+        }
+        h1 {
+            padding: 0;
+            margin: 0;
+            font-weight: 400;
+            font-size: 15.2116px;
+            line-height: 120%;
+        }
+    }
+}
+
+.header__nav_burger-menu {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #333B41;
+    margin-top: 30px;
+    width: 100px;
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        width: 100%;
+        height: 207px;
+    }
+    .menu__item {
+        display: inline-block;
+        list-style-type: none;
+    }
+    .menu__link {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #333B41;
+        font-family: $main-font-family-one;
+        
+        transition: all 0.5s ease;
+        &:hover {
+            cursor: pointer;
+            color: $main-color-two;
+        }
+    }
+    .menu__link_active {
+        color: $main-color-two;
+    }
+}
