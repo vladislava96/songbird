@@ -1,10 +1,28 @@
 .pets {
-    background: url("../../assets/images/palm_foto.svg") no-repeat -480px 707px, url("../../assets/images/strelitzia.svg") no-repeat 1230px 890px;
+    position: relative;
+}
+.pets__background {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 1300px);
+    height: 500px;
+    width: 2100px;
+    margin: 0 auto;
+    background: url("../../assets/images/palm_foto.svg") no-repeat 0px 100%, url("../../assets/images/strelitzia.svg") no-repeat 100% 100%;
     @media(max-width: 1000px) {
-        background: url("../../assets/images/1000px/palm_foto-1000px.svg") no-repeat -190px 940px, url("../../assets/images/1000px/strelitzia-1000px.svg") no-repeat 760px 960px;
+        height: 210px;
+        width: 1000px;
+        left: 0;
+        background: url("../../assets/images/1000px/palm_foto-1000px.svg") no-repeat -200px 100%, url("../../assets/images/1000px/strelitzia-1000px.svg") no-repeat 100% 100%;
     }
     @media(max-width: 640px) {
-        background: url("../../assets/images/1000px/palm_foto-1000px.svg") -200px 900px / 385px 202px  no-repeat , url("../../assets/images/1000px/strelitzia-1000px.svg") 470px 965px / 175px 131px no-repeat;
+        width: 640px;
+        background: url("../../assets/images/1000px/palm_foto-1000px.svg") -250px 100% / 385px 202px  no-repeat , url("../../assets/images/1000px/strelitzia-1000px.svg") 100% 100% / 175px 131px no-repeat;
+    }
+    @media(max-width: 320px) {
+        width: 320px;
+        height: 80px;
+        background: url("../../assets/images/1000px/palm_foto-1000px.svg") -80px 100% /138px 72px  no-repeat , url("../../assets/images/1000px/strelitzia-1000px.svg") 175px 15px / 240px 71px no-repeat;
     }
 }
 .pets__container {
@@ -16,7 +34,10 @@
     border-radius: 25px;
     margin: 80px auto 100px auto;
     @media(max-width: 1000px) {
-        padding: 18px 60px;
-        margin: 80px auto 140px auto;
+        padding: 18px 58px;
+        margin: 60px auto 100px auto;
+    }
+    @media(max-width: 320px) {
+        margin: 20px auto 60px auto;
     }
 }

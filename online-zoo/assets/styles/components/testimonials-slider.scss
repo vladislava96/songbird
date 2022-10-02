@@ -38,6 +38,9 @@
         height: 105px;
         width: 596px;
     }
+    @media(max-width: 320px) {
+        width: 295px;
+    }
 }
 .testimonials__card-border {
     display: flex;
@@ -54,6 +57,9 @@
     @media(max-width: 640px) {
         height: 109px;
         width: 600px;
+    }
+    @media(max-width: 320px) {
+        width: 299px;
     }
 }
 .testimonials__data {

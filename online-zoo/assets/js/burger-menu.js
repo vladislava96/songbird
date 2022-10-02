@@ -18,9 +18,11 @@ class BurgerMenu {
         })
     }
     openMenu() {
+        console.log(this.menuBurger)
         this.menuBurger.style.transform = 'translateX(0px)'
     }
     closeMenu() {
+        console.log('3')
         this.menuBurger.style.transform = 'translateX(640px)'
     }
 }

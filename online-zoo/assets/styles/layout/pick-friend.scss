@@ -27,13 +27,21 @@
         padding-top: 10px;
         padding-bottom: 60px;
     }
+    @media(max-width: 320px) {
+        width: 93.75%;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
     .pick-friend__title {
         font-weight: 400;
         font-size: 48px;
-        line-height: 58px;
+        line-height: 120%;
         color: #FE9013;
         @media(max-width: 640px) {
             font-size: 42px;
+        }
+        @media(max-width: 320px) {
+            font-size: 24px;
         }
     }
     .pick-friend__title-2 {
@@ -45,6 +53,13 @@
         @media(max-width: 1000px) {
             margin: 40px 0;
         }
+        @media(max-width: 640px) {
+            margin: 30px 0 4px;
+        }
+        @media(max-width: 320px) {
+            font-size: 24px;
+            line-height: 120%;
+        }
     }
 }
 .pick-friend__text {
@@ -54,14 +69,17 @@
     .text-1 {
         font-weight: 400;
         font-size: 24px;
-        line-height: 29px;
+        line-height: 120%;
         color: #333B41;
         margin: 30px 0px 40px 0;
         @media(max-width: 1000px) {
             margin: 20px 0;
         }
         @media(max-width: 640px) {
-            font-size: 24px;
+            font-size: 22px;
+        }
+        @media(max-width: 320px) {
+            font-size: 18px;
         }
     }
     .text-2 {
@@ -74,7 +92,10 @@
             margin-right: 80px;
         }
         @media(max-width: 640px) {
-            margin-right: 0px;
+            margin-right: 5px;
+        }
+        @media(max-width: 320px) {
+            display: none;
         }
     }
     .text-3 {
@@ -88,6 +109,9 @@
         }
         @media(max-width: 640px) {
             margin-right: 0px;
+        }
+        @media(max-width: 320px) {
+            display: none;
         }
         a {
             color:#333B41;
@@ -111,9 +135,11 @@
     margin: 0 auto;
     @media(max-width: 640px) {
         width: 588px;
+        margin-left: 20px;
     }
     @media(max-width: 320px) {
-        width: 200px;
+        width: 220px;
+        margin-right: 20px;
     }
     .pick-friend__stage {
         width: 168px;
@@ -146,9 +172,14 @@
     height: 35.08px;
     margin-bottom: 90px;
     @media(max-width: 640px) {
-        margin-left: -50px;
+        margin-left: -48px;
         margin-bottom: 240px;
-        z-index: 10;    
+        z-index: 10;
+        transform: rotate(-5deg);
+    }
+    @media (max-width: 320px) {
+        margin-bottom: -150px;
+        transform: rotate(90deg);
     }
 }
 .pick-friend__button {
@@ -159,6 +190,9 @@
         margin: 70px auto 0; 
     }
     @media(max-width: 640px) {
-        margin: 40px auto 0; 
+        margin: 27px auto 0; 
+    }
+    @media(max-width: 320px) {
+        padding: 16px 74px; 
     }
 }

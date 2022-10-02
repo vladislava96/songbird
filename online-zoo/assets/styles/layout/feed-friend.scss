@@ -5,6 +5,9 @@
     @media(max-width: 1000px) {
         padding-bottom: 30px;
     }
+    @media(max-width: 640px) {
+        padding: 30px 0 46px;
+    }
     .feed-friend__title1 {
         font-weight: 400;
         font-size: 36px;
@@ -12,6 +15,11 @@
         color: #FFFFFF;
         @media(max-width: 1000px) {
             margin-right: 100px;
+        }
+        @media(max-width: 640px) {
+            font-size: 24px;
+            line-height: 120%;
+            margin-right: 0px;
         }
     }
     p {
@@ -23,12 +31,19 @@
         @media(max-width: 1000px) {
             margin: 30px 0 40px;
         }
+        @media(max-width: 640px) {
+            margin: 20px 0 30px;
+        }
     }
     .feed-friend__title2 {
         font-weight: 400;
         font-size: 36px;
         line-height: 130%;
         color: #FE9013;
+        @media(max-width: 320px) {
+            font-size: 24px;
+            line-height: 120%
+        }
     }
 }
 .feed-friend__feed {
@@ -47,8 +62,8 @@
         margin-top: 40px;
     }
     @media(max-width: 640px) {
-        padding: 20px 0 46px;
-        margin-top: 40px;
+        padding: 30px 0 31px;
+        margin-top: 30px;
     }
     h2 {
         font-weight: 400;
@@ -56,6 +71,9 @@
         line-height: 120%;
         text-align: center;
         color: #FE9013;
+        @media(max-width: 320px) {
+            font-size: 24px;
+        }
     }
     .feed-friend__subtitle-h2 {
         margin: 20px 0 60px;
@@ -68,6 +86,11 @@
         }
         @media(max-width: 640px) {
             text-align: center;
+            margin: 20px 0 46px;
+        }
+        @media(max-width: 320px) {
+            font-size: 16px;
+            line-height: 140%;
         }
     }
     p {
@@ -81,6 +104,12 @@
             font-weight: 400;
             color: #000000;
         }
+        @media(max-width: 640px) {
+            margin: 35px 0 0px 10px;
+        }
+        @media(max-width: 320px) {
+            margin: 48px 0 17px 0;
+        }
     }
     .feed-friend__diet-day {
         display: flex;
@@ -88,6 +117,9 @@
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
+        @media(max-width: 320px) {
+            width: 300px;
+        }
         .feed-friend__number {
             .feed-friend__main-number {
                 margin: 64px 10px 0px 0px;
@@ -97,6 +129,12 @@
                 text-align: center;
                 text-transform: uppercase;
                 color: #000000;
+                @media(max-width: 640px) {
+                    margin: 56px 10px 0px 0px;
+                }
+                @media(max-width: 320px) {
+                    font-size: 40.6015px;
+                }
             }
             p {
                 margin: 11px 0 0 0;
@@ -104,10 +142,20 @@
                 font-size: 16px;
                 line-height: 140%;
                 color: #333B41;
+                
+                @media(max-width: 320px) {
+                    font-size: 9.02255px;
+                }
             }
         } 
         .feed-friend__x {
             margin: 33px 65px 0 0;
+            @media(max-width: 640px) {
+                margin: 33px 55px 0 0;
+            }
+            @media(max-width: 320px) {
+                margin: 0;
+            }
         }
         .feed-friend__panda-icon {
             margin: 3px 8px 0 0;
@@ -117,6 +165,9 @@
 
 .progress-bar__place {
     margin-top: 20px;
+    @media(max-width: 640px) {
+        margin-top: 6px;
+    }
 }
 .progress-bar__wrap {
     display: flex;
@@ -139,6 +190,10 @@
     @media(max-width: 640px) {
         width: 600px;
     }
+    @media(max-width: 320px) {
+        width: 300px;
+        height: 13.5px;
+    }
     .progress-bar__line {
         display: flex;
         align-items: center;
@@ -150,6 +205,9 @@
         }
         @media(max-width: 640px) {
             width: 524px;
+        }
+        @media(max-width: 320px) {
+            width: 262px;
         }
     }
     
@@ -170,6 +228,11 @@
         width: 590px;
         left: 5px;
     }
+    @media(max-width: 320px) {
+        width: 280px;
+        left: -3px;
+        top: -19px;
+    }
     .progress-bar__point {
         display: flex;
         flex-direction: column;
@@ -185,6 +248,12 @@
             @media(max-width: 640px) {
                 width: 100px;
             }
+            @media(max-width: 320px) {
+                width: 20px;
+            }
+        }
+        @media(max-width: 320px) {
+            width: 30px;
         }
         .progress-bar__ellipse {
             width: 10px;
@@ -198,6 +267,11 @@
             @media(max-width: 640px) {
                 margin-left: 25px;
             }
+            @media(max-width: 320px) {
+                width: 5px;
+                height: 5px;
+                margin-left: 11px;
+            }
             
         }
         .progress-bar__price {
@@ -208,6 +282,9 @@
             text-transform: uppercase;
             color: #333B41;
             transition: all 1s ease;
+            @media(max-width: 320px) {
+                font-size: 13px;
+            }
         }
         &:hover {
             .progress-bar__ellipse {
@@ -262,7 +339,11 @@
     font-size: 16px;
     line-height: 140%;
     color: #929699;
-   
+    @media(max-width: 640px) {
+        width: 180px;
+        padding: 11px 0 13px 6px;
+        background-position: 155px 17px;
+    }
     &:focus {
         outline: none;
         border: 0.7px solid #4B9200;
@@ -274,7 +355,9 @@
     margin: 0 auto;
     text-align: center;
     margin-top: 20px;
-
+    @media(max-width: 320px) {
+        width: 300px;
+    }
     .feed-friend__input-radio {
         margin-top: 25px;
         margin-bottom: 31px;
@@ -283,11 +366,18 @@
         margin: 30.02px 0 0 0;
         font-size: 16px;
         line-height: 140%;
+        
         color: #333B41;
+        @media(max-width: 320px) {
+            word-spacing: -1px;
+        }
     }
 }
 
 .feed-friend__button {
     padding: 16px 74px;
     border-radius: 25px;
+    @media(max-width: 640px) {
+        margin-left: 8px;
+    }
 }

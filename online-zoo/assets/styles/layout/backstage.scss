@@ -1,13 +1,35 @@
 .backstage {
+    position: relative;
+}
+.backstage__background {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 800px);
+    width: 1600px;
+    height: 600px;
     background-image: url("../../assets/images/flower.jpg");
     background-repeat: no-repeat;
-    background-position: 1400px 12px;
+    background-position: 1400px 0px;
+    z-index: -1;
+    @media(max-width: 1000px) {
+        background-image: none;
+        left: 0;
+        width: 1000px;
+    }
     @media(max-width: 640px) {
-        background-position: 500px 0px;
+        background-image: url("../../assets/images/flower.jpg");
+        width: 640px;
+        height: 500px;
+        background-position: 510px 0px;
         background-size: 231px 476px; 
     }
+    @media(max-width: 320px) {
+        width: 320px;
+        height: 300px;
+        background-position: 290px 50px;
+        background-size: 105px 217px; 
+    }
 }
-
 .backstage__content {
     display: flex;
     justify-content: space-between;
@@ -21,12 +43,17 @@
     }
     @media(max-width: 640px) {
         padding-top: 60px;
-        padding-bottom: 18px; 
+        padding-bottom: 21px; 
+    }
+    @media(max-width: 320px) {
+        padding-top: 104px;
+        padding-bottom: 40px; 
     }
 }
 
 .backstage__text {
     width: 40.08%;
+    
     h2 {
         margin-bottom: 20px;
         font-family: $main-font-family-one;
@@ -34,6 +61,10 @@
         font-size: 48px;
         line-height: 58px;
         color: $text-color;
+        @media(max-width: 320px) {
+            font-size: 24px;
+            line-height: 120%;
+        }
     }
     p {
         font-family: $main-font-family-one;
@@ -54,6 +85,9 @@
     }
     @media(max-width: 1000px) {
         width: 454px;
+    }
+    @media(max-width: 640px) {
+        width: 484px;
     }
 }
 .backstage__bamboo-cap {

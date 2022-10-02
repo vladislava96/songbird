@@ -1,7 +1,28 @@
 .testimonials {
-    background: url("../../assets/images/leav.svg") no-repeat 1355px 645px;
+    position: relative;
+}
+.testimonials__background {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 850px);
+    width: 1700px;
+    height: 400px;
+    z-index: -1;
+    background: url("../../assets/images/leav.svg") no-repeat 1350px 120px;
     @media(max-width: 1000px) {
-        background: url("../../assets/images/1000px/leav_foto-1000px.svg") no-repeat 800px 600px;
+        left: 0;
+        width: 1000px;
+        height: 200px;
+        background: url("../../assets/images/1000px/leav_foto-1000px.svg") no-repeat 800px -30px;
+    }
+    @media(max-width: 640px) {
+        width: 640px;
+        background: url("../../assets/images/1000px/leav_foto-1000px.svg") 525px 68px / 203px 203px no-repeat ;
+    }
+    @media(max-width: 320px) {
+        width: 320px;
+        height: 100px;
+        background: url("../../assets/images/1000px/leav_foto-1000px.svg") 265px 40px / 94px 94px no-repeat;
     }
 }
 .testimonials__container {
@@ -11,6 +32,9 @@
     }
     @media(max-width: 640px) {
         padding: 60px 0 80px; 
+    }
+    @media(max-width: 320px) {
+        padding: 30px 0 60px; 
     }
 }
 h3 {
@@ -33,7 +57,11 @@ h3 {
         margin-top: 52px;
     }
     @media(max-width: 640px) {
-        padding: 17px 40px;
+        padding: 17px 55px;
         margin: 40px auto 0;
+    }
+    @media(max-width: 320px) {
+        padding: 17px 56px;
+        margin: 30px auto 0;
     }
 }
