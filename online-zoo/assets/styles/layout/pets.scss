@@ -7,7 +7,8 @@
     height: 500px;
     width: 100%;
     margin: 0 auto;
-    background: url("../../assets/images/palm_foto.svg") no-repeat -450px 100%, url("../../assets/images/strelitzia.svg") no-repeat 100% 100%;
+    z-index: -1;
+    background: url("../../assets/images/palm_foto.svg") no-repeat -480px 100%, url("../../assets/images/strelitzia.svg") no-repeat 100% 100%;
     @media(min-width: 1601px) {
         left: calc(50% - 800px);
         width: 1600px;
@@ -34,6 +35,9 @@
     margin: 80px auto 100px auto;
     @media(max-width: 1000px) {
         padding: 18px 58px;
+        margin: 80px auto 140px auto;
+    }
+    @media(max-width: 640px) {
         margin: 60px auto 100px auto;
     }
     @media(max-width: 320px) {

@@ -8,13 +8,13 @@
     height: 600px;
     background-image: url("../../assets/images/flower.jpg");
     background-repeat: no-repeat;
-    background-position: 110% 0px;
+    background-position: 107% 10px;
     z-index: -1;
     @media(min-width: 1601px) {
         left: calc(50% - 800px);
         width: 1600px;
     }
-    @media(max-width: 1000px) {
+    @media(max-width: 1300px) {
         background-image: none;
     }
     @media(max-width: 640px) {
@@ -36,7 +36,7 @@
     align-items: center;
     width: 100%;
     padding-top: 140px;
-    padding-bottom: 118px;
+    padding-bottom: 114px;
     @media(max-width: 1000px) {
         padding-top: 100px;
         padding-bottom: 83px; 

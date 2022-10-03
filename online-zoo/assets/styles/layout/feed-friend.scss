@@ -64,7 +64,7 @@
     line-height: 140%;
     color: #333B41;
     @media(max-width: 1000px) {
-        padding: 20px 44px 46px 47px;
+        padding: 24px 44px 46px 47px;
         margin-top: 40px;
     }
     @media(max-width: 640px) {
@@ -104,13 +104,13 @@
         }
     }
     p {
-        margin: 48px 0 17px;
+        margin: 43px 0 17px;
         font-weight: 500;
         font-size: 16px;
         line-height: 140%;
         color: #000000;
         @media(max-width: 1000px) {
-            margin: 48px 0 17px 20px;
+            margin: 40px 0 17px 20px;
             font-weight: 400;
             color: #000000;
         }
@@ -135,13 +135,16 @@
         }
         .feed-friend__number {
             .feed-friend__main-number {
-                margin: 64px 10px 0px 0px;
+                margin: 55px 10px 0px 0px;
                 font-weight: 500;
                 font-size: 72px;
                 line-height: 80%;
                 text-align: center;
                 text-transform: uppercase;
                 color: #000000;
+                @media(max-width: 1000px) {
+                    margin: 58px 16px 0px 0px;
+                }
                 @media(max-width: 640px) {
                     margin: 56px 10px 0px 0px;
                 }
@@ -182,7 +185,7 @@
 }
 
 .progress-bar__place {
-    margin-top: 20px;
+    margin-top: 0px;
     @media(max-width: 640px) {
         margin-top: 6px;
     }

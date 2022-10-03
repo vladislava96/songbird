@@ -267,7 +267,7 @@
 }
 @media (max-width: 1000px) {
   .feed-friend__feed {
-    padding: 20px 44px 46px 47px;
+    padding: 24px 44px 46px 47px;
     margin-top: 40px;
   }
 }
@@ -320,7 +320,7 @@
   }
 }
 .feed-friend__feed p {
-  margin: 48px 0 17px;
+  margin: 43px 0 17px;
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
@@ -328,7 +328,7 @@
 }
 @media (max-width: 1000px) {
   .feed-friend__feed p {
-    margin: 48px 0 17px 20px;
+    margin: 40px 0 17px 20px;
     font-weight: 400;
     color: #000000;
   }
@@ -361,13 +361,18 @@
   }
 }
 .feed-friend__feed .feed-friend__diet-day .feed-friend__number .feed-friend__main-number {
-  margin: 64px 10px 0px 0px;
+  margin: 55px 10px 0px 0px;
   font-weight: 500;
   font-size: 72px;
   line-height: 80%;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+@media (max-width: 1000px) {
+  .feed-friend__feed .feed-friend__diet-day .feed-friend__number .feed-friend__main-number {
+    margin: 58px 16px 0px 0px;
+  }
 }
 @media (max-width: 640px) {
   .feed-friend__feed .feed-friend__diet-day .feed-friend__number .feed-friend__main-number {
@@ -416,7 +421,7 @@
 }
 
 .progress-bar__place {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 @media (max-width: 640px) {
   .progress-bar__place {
@@ -767,7 +772,12 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 44px 0 50px;
+  padding: 12px 0 50px;
+}
+@media (max-width: 1000px) {
+  .footer__row2 {
+    padding: 10px 0 50px;
+  }
 }
 @media (max-width: 640px) {
   .footer__row2 {
@@ -862,10 +872,16 @@
   line-height: 140%;
   color: #BDBDBD;
 }
-.footer__input-email:focus {
+.footer__input-email:valid {
   outline: none;
   border: 0.7px solid #4B9200;
   border-radius: 2px;
+}
+.footer__input-email:invalid:required {
+  outline: none;
+  border: 0.7px solid #D31414;
+  border-radius: 2px;
+  color: #D31414;
 }
 
 .footer__input-submit {
@@ -879,6 +895,11 @@
   line-height: 140%;
   color: #000000;
   transition: all 0.5s ease;
+}
+@media (max-width: 860px) {
+  .footer__input-submit {
+    margin-top: 10px;
+  }
 }
 .footer__input-submit:hover {
   border: 1px solid #4B9200;
@@ -899,7 +920,7 @@
 }
 @media (max-width: 640px) {
   .footer__nav {
-    width: 46.4%;
+    width: 50.4%;
   }
 }
 @media (max-width: 320px) {
@@ -916,6 +937,11 @@
 @media (max-width: 1000px) {
   .footer__menu {
     margin-left: 50px;
+  }
+}
+@media (max-width: 790px) {
+  .footer__menu {
+    margin-left: 0px;
   }
 }
 @media (max-width: 640px) {
