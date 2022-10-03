@@ -20,12 +20,14 @@ $main-font-family-one: 'Roboto', sans-serif;
 .container {
     width: 72.5%;
     margin: 0 auto;
-}
-@media(max-width: 1000px) {
-    .container { 
-        width: 94%;
+    @media(min-width: 1601px) {
+        width: 1158px;
     }
-} 
+    @media(max-width: 1000px) {
+        width: 94%;
+    } 
+}
+
 
 
 @import '../../assets/styles/layout/header.scss';

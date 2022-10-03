@@ -308,12 +308,11 @@
 .backstage__background {
   position: absolute;
   top: 0;
-  left: calc(50% - 800px);
-  width: 1600px;
+  width: 100%;
   height: 600px;
   background-image: url("../../assets/images/flower.jpg");
   background-repeat: no-repeat;
-  background-position: 1400px 0px;
+  background-position: 110% 0px;
   z-index: -1;
 }
 @media (max-width: 1000px) {
@@ -364,7 +363,7 @@
 @media (max-width: 320px) {
   .backstage__content {
     padding-top: 104px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
 }
 
@@ -383,6 +382,7 @@
   .backstage__text h2 {
     font-size: 24px;
     line-height: 120%;
+    margin-bottom: 10px;
   }
 }
 .backstage__text p {
@@ -404,6 +404,11 @@
 @media (max-width: 640px) {
   .backstage__text .question-title {
     margin: 30px 0 20px;
+  }
+}
+@media (max-width: 320px) {
+  .backstage__text .question-title {
+    margin: 20px 0 10px;
   }
 }
 @media (max-width: 1000px) {
@@ -430,11 +435,10 @@
 .pets__background {
   position: absolute;
   bottom: 0;
-  left: calc(50% - 1300px);
   height: 500px;
-  width: 2100px;
+  width: 100%;
   margin: 0 auto;
-  background: url("../../assets/images/palm_foto.svg") no-repeat 0px 100%, url("../../assets/images/strelitzia.svg") no-repeat 100% 100%;
+  background: url("../../assets/images/palm_foto.svg") no-repeat -450px 100%, url("../../assets/images/strelitzia.svg") no-repeat 100% 100%;
 }
 @media (max-width: 1000px) {
   .pets__background {
@@ -563,6 +567,7 @@
   .pick-friend__container .pick-friend__title-2 {
     font-size: 24px;
     line-height: 120%;
+    margin: 20px 0 20px;
   }
 }
 
@@ -590,6 +595,8 @@
 @media (max-width: 320px) {
   .pick-friend__text .text-1 {
     font-size: 18px;
+    text-align: center;
+    margin: 10px 20px 0 0;
   }
 }
 .pick-friend__text .text-2 {
@@ -669,7 +676,7 @@
 @media (max-width: 320px) {
   .pick-friend__stages {
     width: 220px;
-    margin-right: 20px;
+    margin-left: 65px;
   }
 }
 .pick-friend__stages .pick-friend__stage {
@@ -694,6 +701,11 @@
   font-size: 16px;
   line-height: 140%;
   color: #333B41;
+}
+@media (max-width: 320px) {
+  .pick-friend__stages .pick-friend__stage .pick-friend__stage-text {
+    margin-top: 10px;
+  }
 }
 
 .pick-friend__arrow {
@@ -744,8 +756,7 @@
 .testimonials__background {
   position: absolute;
   bottom: 0;
-  left: calc(50% - 850px);
-  width: 1700px;
+  width: 100%;
   height: 400px;
   z-index: -1;
   background: url("../../assets/images/leav.svg") no-repeat 1350px 120px;
@@ -803,6 +814,13 @@ h3 {
 @media (max-width: 1000px) {
   h3 {
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 320px) {
+  h3 {
+    font-size: 24px;
+    line-height: 120%;
+    margin-bottom: 20px;
   }
 }
 
@@ -905,6 +923,11 @@ h3 {
 @media (max-width: 640px) {
   .footer__button {
     margin-top: 32px;
+  }
+}
+@media (max-width: 320px) {
+  .footer__button {
+    margin-top: 55px;
   }
 }
 
@@ -1140,7 +1163,7 @@ h3 {
   position: relative;
   top: 465px;
   left: -82px;
-  width: 1322px;
+  width: 113.96%;
 }
 .slider__nav__buttons .slider__button {
   display: flex;
@@ -1188,6 +1211,7 @@ h3 {
     width: 300px;
     padding: 0px;
     margin: 0px;
+    height: 1388px;
   }
 }
 
@@ -1436,6 +1460,7 @@ h3 {
 @media (max-width: 320px) {
   .testimonials__card {
     width: 295px;
+    padding: 9px 12px 12px 12px;
   }
 }
 
@@ -1510,6 +1535,11 @@ h3 {
   font-size: 15px;
   line-height: 120%;
   color: #767474;
+}
+@media (max-width: 320px) {
+  .testimonials__description {
+    margin-top: 6px;
+  }
 }
 
 .slider-scroll {

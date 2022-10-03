@@ -8,6 +8,9 @@
     @media(max-width: 640px) {
         padding: 30px 0 46px;
     }
+    @media(max-width: 320px) {
+        padding: 30px 0 20px;
+    }
     .feed-friend__title1 {
         font-weight: 400;
         font-size: 36px;
@@ -33,6 +36,9 @@
         }
         @media(max-width: 640px) {
             margin: 20px 0 30px;
+        }
+        @media(max-width: 320px) {
+            margin: 16px 0 30px;
         }
     }
     .feed-friend__title2 {
@@ -65,6 +71,9 @@
         padding: 30px 0 31px;
         margin-top: 30px;
     }
+    @media(max-width: 320px) {
+        padding: 20px 0 21px;
+    }
     h2 {
         font-weight: 400;
         font-size: 48px;
@@ -91,6 +100,7 @@
         @media(max-width: 320px) {
             font-size: 16px;
             line-height: 140%;
+            margin: 9px 0 7px;
         }
     }
     p {
@@ -108,7 +118,7 @@
             margin: 35px 0 0px 10px;
         }
         @media(max-width: 320px) {
-            margin: 48px 0 17px 0;
+            margin: 0px 0 8px 0;
         }
     }
     .feed-friend__diet-day {
@@ -134,6 +144,7 @@
                 }
                 @media(max-width: 320px) {
                     font-size: 40.6015px;
+                    margin: 30px 0px 0px 0px;
                 }
             }
             p {
@@ -145,6 +156,7 @@
                 
                 @media(max-width: 320px) {
                     font-size: 9.02255px;
+                    margin: 4px 0 0 0;
                 }
             }
         } 
@@ -154,11 +166,14 @@
                 margin: 33px 55px 0 0;
             }
             @media(max-width: 320px) {
-                margin: 0;
+                margin: 20px 27px 0 0;
             }
         }
         .feed-friend__panda-icon {
             margin: 3px 8px 0 0;
+            @media(max-width: 320px) {
+                margin: 0;
+            }
         }
     } 
 }
@@ -283,6 +298,7 @@
             color: #333B41;
             transition: all 1s ease;
             @media(max-width: 320px) {
+                margin-top: 10px;
                 font-size: 13px;
             }
         }
@@ -344,6 +360,10 @@
         padding: 11px 0 13px 6px;
         background-position: 155px 17px;
     }
+    @media(max-width: 320px) {
+        background-position: 160px 10px;
+        padding: 7px 0 10px 6px;
+    }
     &:focus {
         outline: none;
         border: 0.7px solid #4B9200;
@@ -357,10 +377,14 @@
     margin-top: 20px;
     @media(max-width: 320px) {
         width: 300px;
+        margin-top: 8px;
     }
     .feed-friend__input-radio {
         margin-top: 25px;
         margin-bottom: 31px;
+        @media(max-width: 320px) {
+            margin-bottom: 28px;
+        }
     }
     .feed-friend__share {
         margin: 30.02px 0 0 0;
@@ -379,5 +403,8 @@
     border-radius: 25px;
     @media(max-width: 640px) {
         margin-left: 8px;
+    }
+    @media(max-width: 320px) {
+        margin-left: 0px;
     }
 }

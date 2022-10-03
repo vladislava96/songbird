@@ -4,8 +4,7 @@
 .testimonials__background {
     position: absolute;
     bottom: 0;
-    left: calc(50% - 850px);
-    width: 1700px;
+    width: 100%;
     height: 400px;
     z-index: -1;
     background: url("../../assets/images/leav.svg") no-repeat 1350px 120px;
@@ -47,6 +46,11 @@ h3 {
     color: #333B41;
     @media(max-width: 1000px) {
         margin-bottom: 30px;
+    }
+    @media(max-width: 320px) {
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 20px;
     }
 }
 .testimonials__button {

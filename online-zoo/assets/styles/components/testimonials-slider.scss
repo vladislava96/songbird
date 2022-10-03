@@ -40,6 +40,7 @@
     }
     @media(max-width: 320px) {
         width: 295px;
+        padding: 9px 12px 12px 12px;
     }
 }
 .testimonials__card-border {
@@ -107,6 +108,9 @@
     font-size: 15px;
     line-height: 120%;
     color: #767474;
+    @media(max-width: 320px) {
+        margin-top: 6px;
+    }
 }
 .slider-scroll {
     width: 599px;

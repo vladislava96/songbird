@@ -11,12 +11,17 @@
   width: 72.5%;
   margin: 0 auto;
 }
-
+@media (min-width: 1601px) {
+  .container {
+    width: 1158px;
+  }
+}
 @media (max-width: 1000px) {
   .container {
     width: 94%;
   }
 }
+
 .header {
   position: absolute;
   top: 0;
@@ -191,6 +196,11 @@
     padding: 30px 0 46px;
   }
 }
+@media (max-width: 320px) {
+  .feed-friend {
+    padding: 30px 0 20px;
+  }
+}
 .feed-friend .feed-friend__title1 {
   font-weight: 400;
   font-size: 36px;
@@ -224,6 +234,11 @@
 @media (max-width: 640px) {
   .feed-friend p {
     margin: 20px 0 30px;
+  }
+}
+@media (max-width: 320px) {
+  .feed-friend p {
+    margin: 16px 0 30px;
   }
 }
 .feed-friend .feed-friend__title2 {
@@ -262,6 +277,11 @@
     margin-top: 30px;
   }
 }
+@media (max-width: 320px) {
+  .feed-friend__feed {
+    padding: 20px 0 21px;
+  }
+}
 .feed-friend__feed h2 {
   font-weight: 400;
   font-size: 48px;
@@ -296,6 +316,7 @@
   .feed-friend__feed .feed-friend__subtitle-h2 {
     font-size: 16px;
     line-height: 140%;
+    margin: 9px 0 7px;
   }
 }
 .feed-friend__feed p {
@@ -319,7 +340,7 @@
 }
 @media (max-width: 320px) {
   .feed-friend__feed p {
-    margin: 48px 0 17px 0;
+    margin: 0px 0 8px 0;
   }
 }
 .feed-friend__feed .feed-friend__diet-day {
@@ -351,6 +372,7 @@
 @media (max-width: 320px) {
   .feed-friend__feed .feed-friend__diet-day .feed-friend__number .feed-friend__main-number {
     font-size: 40.6015px;
+    margin: 30px 0px 0px 0px;
   }
 }
 .feed-friend__feed .feed-friend__diet-day .feed-friend__number p {
@@ -363,6 +385,7 @@
 @media (max-width: 320px) {
   .feed-friend__feed .feed-friend__diet-day .feed-friend__number p {
     font-size: 9.02255px;
+    margin: 4px 0 0 0;
   }
 }
 .feed-friend__feed .feed-friend__diet-day .feed-friend__x {
@@ -375,11 +398,16 @@
 }
 @media (max-width: 320px) {
   .feed-friend__feed .feed-friend__diet-day .feed-friend__x {
-    margin: 0;
+    margin: 20px 27px 0 0;
   }
 }
 .feed-friend__feed .feed-friend__diet-day .feed-friend__panda-icon {
   margin: 3px 8px 0 0;
+}
+@media (max-width: 320px) {
+  .feed-friend__feed .feed-friend__diet-day .feed-friend__panda-icon {
+    margin: 0;
+  }
 }
 
 .progress-bar__place {
@@ -534,6 +562,7 @@
 }
 @media (max-width: 320px) {
   .progress-bar__ellipse-row .progress-bar__point .progress-bar__price {
+    margin-top: 10px;
     font-size: 13px;
   }
 }
@@ -591,6 +620,12 @@
     background-position: 155px 17px;
   }
 }
+@media (max-width: 320px) {
+  .feed-friend__input-number {
+    background-position: 160px 10px;
+    padding: 7px 0 10px 6px;
+  }
+}
 .feed-friend__input-number:focus {
   outline: none;
   border: 0.7px solid #4B9200;
@@ -606,11 +641,17 @@
 @media (max-width: 320px) {
   .feed-friend__input-amount {
     width: 300px;
+    margin-top: 8px;
   }
 }
 .feed-friend__input-amount .feed-friend__input-radio {
   margin-top: 25px;
   margin-bottom: 31px;
+}
+@media (max-width: 320px) {
+  .feed-friend__input-amount .feed-friend__input-radio {
+    margin-bottom: 28px;
+  }
 }
 .feed-friend__input-amount .feed-friend__share {
   margin: 30.02px 0 0 0;
@@ -631,6 +672,11 @@
 @media (max-width: 640px) {
   .feed-friend__button {
     margin-left: 8px;
+  }
+}
+@media (max-width: 320px) {
+  .feed-friend__button {
+    margin-left: 0px;
   }
 }
 
@@ -710,6 +756,11 @@
 @media (max-width: 640px) {
   .footer__button {
     margin-top: 32px;
+  }
+}
+@media (max-width: 320px) {
+  .footer__button {
+    margin-top: 55px;
   }
 }
 

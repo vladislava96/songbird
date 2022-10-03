@@ -4,12 +4,11 @@
 .backstage__background {
     position: absolute;
     top: 0;
-    left: calc(50% - 800px);
-    width: 1600px;
+    width: 100%;
     height: 600px;
     background-image: url("../../assets/images/flower.jpg");
     background-repeat: no-repeat;
-    background-position: 1400px 0px;
+    background-position: 110% 0px;
     z-index: -1;
     @media(max-width: 1000px) {
         background-image: none;
@@ -47,7 +46,7 @@
     }
     @media(max-width: 320px) {
         padding-top: 104px;
-        padding-bottom: 40px; 
+        padding-bottom: 50px; 
     }
 }
 
@@ -64,6 +63,7 @@
         @media(max-width: 320px) {
             font-size: 24px;
             line-height: 120%;
+            margin-bottom: 10px;
         }
     }
     p {
@@ -81,6 +81,9 @@
         font-size: 24px;
         @media(max-width: 640px) {
             margin: 30px 0 20px;
+        }
+        @media(max-width: 320px) {
+            margin: 20px 0 10px;
         }
     }
     @media(max-width: 1000px) {

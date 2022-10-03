@@ -4,11 +4,10 @@
 .pets__background {
     position: absolute;
     bottom: 0;
-    left: calc(50% - 1300px);
     height: 500px;
-    width: 2100px;
+    width: 100%;
     margin: 0 auto;
-    background: url("../../assets/images/palm_foto.svg") no-repeat 0px 100%, url("../../assets/images/strelitzia.svg") no-repeat 100% 100%;
+    background: url("../../assets/images/palm_foto.svg") no-repeat -450px 100%, url("../../assets/images/strelitzia.svg") no-repeat 100% 100%;
     @media(max-width: 1000px) {
         height: 210px;
         width: 1000px;

@@ -59,6 +59,7 @@
         @media(max-width: 320px) {
             font-size: 24px;
             line-height: 120%;
+            margin: 20px 0 20px;
         }
     }
 }
@@ -80,6 +81,8 @@
         }
         @media(max-width: 320px) {
             font-size: 18px;
+            text-align: center;
+            margin: 10px 20px 0 0;
         }
     }
     .text-2 {
@@ -139,7 +142,7 @@
     }
     @media(max-width: 320px) {
         width: 220px;
-        margin-right: 20px;
+        margin-left: 65px;
     }
     .pick-friend__stage {
         width: 168px;
@@ -163,6 +166,9 @@
             font-size: 16px;
             line-height: 140%;
             color: #333B41;
+            @media(max-width: 320px) {
+                margin-top: 10px;
+            }
         }
     }
 }
