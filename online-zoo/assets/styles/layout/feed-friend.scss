@@ -127,6 +127,9 @@
         justify-content: space-between;
         align-items: center;
         margin: 0 auto;
+        @media(max-width: 640px) {
+            width: 88.66%;
+        }
         @media(max-width: 320px) {
             width: 300px;
         }
@@ -194,16 +197,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 976px;
+    width: 100%;
     height: 27px;
     background: #404950;
     border-radius: 2px;
     margin: 0 auto;
     @media(max-width: 1000px) {
-        width: 810px;
+        width: 96.42%;
     }
     @media(max-width: 640px) {
-        width: 600px;
+        width: 100%;
     }
     @media(max-width: 320px) {
         width: 300px;
@@ -212,14 +215,14 @@
     .progress-bar__line {
         display: flex;
         align-items: center;
-        width: 915px;
+        width: 93.75%;
         height: 2px;
         background: #72828E;
         @media(max-width: 1000px) {
-            width: 785px;
+            width: 96.91%;
         }
         @media(max-width: 640px) {
-            width: 524px;
+            width: 87.33%;
         }
         @media(max-width: 320px) {
             width: 262px;
@@ -230,18 +233,14 @@
 .progress-bar__ellipse-row {
     display: flex;
     justify-content: space-between;
-    width: 1045px;
+    width: 106%;
     z-index: 10;
     position: relative;
-    left: 50px;
+    left: 5%;
     top: -28px;
-    @media(max-width: 1000px) {
-        width: 890px;
-        left: 40px;
-    }
     @media(max-width: 640px) {
-        width: 590px;
-        left: 5px;
+        width: 100%;
+        left: 0%;
     }
     @media(max-width: 320px) {
         width: 280px;
@@ -404,7 +403,7 @@
     @media(max-width: 640px) {
         margin-left: 8px;
     }
-    @media(max-width: 320px) {
+    @media(max-width: 400px) {
         margin-left: 0px;
     }
 }

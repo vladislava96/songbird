@@ -8,20 +8,20 @@
     height: 400px;
     z-index: -1;
     background: url("../../assets/images/leav.svg") no-repeat 1350px 120px;
+    @media(min-width: 1601px) {
+        left: calc(50% - 800px);
+        width: 1600px;
+    }
     @media(max-width: 1000px) {
-        left: 0;
-        width: 1000px;
         height: 200px;
-        background: url("../../assets/images/1000px/leav_foto-1000px.svg") no-repeat 800px -30px;
+        background: url("../../assets/images/1000px/leav_foto-1000px.svg") no-repeat calc(100% + 130px) -30px;
     }
     @media(max-width: 640px) {
-        width: 640px;
-        background: url("../../assets/images/1000px/leav_foto-1000px.svg") 525px 68px / 203px 203px no-repeat ;
+        background: url("../../assets/images/1000px/leav_foto-1000px.svg") calc(100% + 30px) 68px / 203px 203px no-repeat ;
     }
     @media(max-width: 320px) {
-        width: 320px;
         height: 100px;
-        background: url("../../assets/images/1000px/leav_foto-1000px.svg") 265px 40px / 94px 94px no-repeat;
+        background: url("../../assets/images/1000px/leav_foto-1000px.svg") calc(100% + 40px) 40px / 94px 94px no-repeat;
     }
 }
 .testimonials__container {

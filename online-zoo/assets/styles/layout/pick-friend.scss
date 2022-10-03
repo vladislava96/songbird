@@ -134,13 +134,16 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 764px;
+    width: 65.86%;
     margin: 0 auto;
+    @media(max-width: 1000px) {
+        width: 81.27%;
+    }
     @media(max-width: 640px) {
-        width: 588px;
+        width: 91.87%;
         margin-left: 20px;
     }
-    @media(max-width: 320px) {
+    @media(max-width: 639px) {
         width: 220px;
         margin-left: 65px;
     }
@@ -166,7 +169,7 @@
             font-size: 16px;
             line-height: 140%;
             color: #333B41;
-            @media(max-width: 320px) {
+            @media(max-width: 639px) {
                 margin-top: 10px;
             }
         }
@@ -183,7 +186,7 @@
         z-index: 10;
         transform: rotate(-5deg);
     }
-    @media (max-width: 320px) {
+    @media (max-width: 639px) {
         margin-bottom: -150px;
         transform: rotate(90deg);
     }
