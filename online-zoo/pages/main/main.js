@@ -7,3 +7,7 @@ const openMenuBtn = document.querySelector('.header__burger-menu-btn');
 new BurgerMenu(burgerMenu, burgerNav, openMenuBtn)
 
 console.log('1')
+
+console.log(document.querySelectorAll("div")[1])
+
+console.log(document.body.parentNode === document.documentElement)

@@ -241,9 +241,29 @@
     position: relative;
     left: 5%;
     top: -28px;
+    @media(max-width: 1000px) {
+        width: 109%;
+        left: 6%;
+    }
     @media(max-width: 640px) {
-        width: 100%;
+        width: 97%;
         left: 0%;
+    }
+    @media(max-width: 560px) {
+        width: 97%;
+        left: -1%;
+    }
+    @media(max-width: 520px) {
+        width: 100%;
+        left: 2%;
+    }
+    @media(max-width: 490px) {
+        width: 100%;
+        left: 3%;
+    }
+    @media(max-width: 380px) {
+        width: 97%;
+        left: 1%;
     }
     @media(max-width: 320px) {
         width: 280px;
@@ -256,6 +276,11 @@
         margin-top: 10px;
         width: 200px;
         cursor: pointer;
+        &:nth-child(-n+1) {
+            @media(max-width: 1000px) {
+                display: none;
+            }
+        }
         &:nth-child(-n+3) {
             @media(max-width: 640px) {
                 display: none;
@@ -284,6 +309,9 @@
             @media(max-width: 640px) {
                 margin-left: 25px;
             }
+            @media(max-width: 520px) {
+                margin-left: 10px;
+            }
             @media(max-width: 320px) {
                 width: 5px;
                 height: 5px;
@@ -299,6 +327,9 @@
             text-transform: uppercase;
             color: #333B41;
             transition: all 1s ease;
+            @media(max-width: 520px) {
+                font-size: 22px;
+            }
             @media(max-width: 320px) {
                 margin-top: 10px;
                 font-size: 13px;
@@ -359,8 +390,8 @@
     color: #929699;
     @media(max-width: 640px) {
         width: 180px;
-        padding: 11px 0 13px 6px;
-        background-position: 155px 17px;
+        padding: 10px 0 8px 6px;
+        background-position: 158px 10px;
     }
     @media(max-width: 320px) {
         background-position: 160px 10px;
@@ -377,15 +408,30 @@
     margin: 0 auto;
     text-align: center;
     margin-top: 20px;
+    @media(max-width: 640px) {
+        margin-top: 23px;
+    }
     @media(max-width: 320px) {
         width: 300px;
         margin-top: 8px;
     }
     .feed-friend__input-radio {
-        margin-top: 25px;
-        margin-bottom: 31px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #333B41;
+        margin: 25px 26px 31px 0px;
+        label {
+            @media(max-width: 320px) {
+                margin-left: 5px;
+                margin-right: 21px;
+            }
+        }
+        @media(max-width: 640px) {
+            margin: 30px 26px 31px 0px;
+        }
         @media(max-width: 320px) {
-            margin-bottom: 28px;
+            margin: 24px auto 28px auto;
         }
     }
     .feed-friend__share {
@@ -410,3 +456,4 @@
         margin-left: 0px;
     }
 }
+

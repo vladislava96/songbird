@@ -493,10 +493,40 @@
   left: 5%;
   top: -28px;
 }
+@media (max-width: 1000px) {
+  .progress-bar__ellipse-row {
+    width: 109%;
+    left: 6%;
+  }
+}
 @media (max-width: 640px) {
   .progress-bar__ellipse-row {
-    width: 100%;
+    width: 97%;
     left: 0%;
+  }
+}
+@media (max-width: 560px) {
+  .progress-bar__ellipse-row {
+    width: 97%;
+    left: -1%;
+  }
+}
+@media (max-width: 520px) {
+  .progress-bar__ellipse-row {
+    width: 100%;
+    left: 2%;
+  }
+}
+@media (max-width: 490px) {
+  .progress-bar__ellipse-row {
+    width: 100%;
+    left: 3%;
+  }
+}
+@media (max-width: 380px) {
+  .progress-bar__ellipse-row {
+    width: 97%;
+    left: 1%;
   }
 }
 @media (max-width: 320px) {
@@ -512,6 +542,11 @@
   margin-top: 10px;
   width: 200px;
   cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .progress-bar__ellipse-row .progress-bar__point:nth-child(-n+1) {
+    display: none;
+  }
 }
 @media (max-width: 640px) {
   .progress-bar__ellipse-row .progress-bar__point:nth-child(-n+3) {
@@ -548,6 +583,11 @@
     margin-left: 25px;
   }
 }
+@media (max-width: 520px) {
+  .progress-bar__ellipse-row .progress-bar__point .progress-bar__ellipse {
+    margin-left: 10px;
+  }
+}
 @media (max-width: 320px) {
   .progress-bar__ellipse-row .progress-bar__point .progress-bar__ellipse {
     width: 5px;
@@ -563,6 +603,11 @@
   text-transform: uppercase;
   color: #333B41;
   transition: all 1s ease;
+}
+@media (max-width: 520px) {
+  .progress-bar__ellipse-row .progress-bar__point .progress-bar__price {
+    font-size: 22px;
+  }
 }
 @media (max-width: 320px) {
   .progress-bar__ellipse-row .progress-bar__point .progress-bar__price {
@@ -620,8 +665,8 @@
 @media (max-width: 640px) {
   .feed-friend__input-number {
     width: 180px;
-    padding: 11px 0 13px 6px;
-    background-position: 155px 17px;
+    padding: 10px 0 8px 6px;
+    background-position: 158px 10px;
   }
 }
 @media (max-width: 320px) {
@@ -642,6 +687,11 @@
   text-align: center;
   margin-top: 20px;
 }
+@media (max-width: 640px) {
+  .feed-friend__input-amount {
+    margin-top: 23px;
+  }
+}
 @media (max-width: 320px) {
   .feed-friend__input-amount {
     width: 300px;
@@ -649,12 +699,26 @@
   }
 }
 .feed-friend__input-amount .feed-friend__input-radio {
-  margin-top: 25px;
-  margin-bottom: 31px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333B41;
+  margin: 25px 26px 31px 0px;
+}
+@media (max-width: 320px) {
+  .feed-friend__input-amount .feed-friend__input-radio label {
+    margin-left: 5px;
+    margin-right: 21px;
+  }
+}
+@media (max-width: 640px) {
+  .feed-friend__input-amount .feed-friend__input-radio {
+    margin: 30px 26px 31px 0px;
+  }
 }
 @media (max-width: 320px) {
   .feed-friend__input-amount .feed-friend__input-radio {
-    margin-bottom: 28px;
+    margin: 24px auto 28px auto;
   }
 }
 .feed-friend__input-amount .feed-friend__share {
@@ -1126,6 +1190,49 @@
 }
 .header__nav_burger-menu .menu__link_active {
   color: #FE9013;
+}
+
+input[type=radio] {
+  appearance: none;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #FE9013;
+  border-radius: 50%;
+  vertical-align: -2px;
+  color: green;
+}
+
+input[type=radio]::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  font-size: 1.2em;
+  right: -0.3px;
+  top: 0.2px;
+  visibility: hidden;
+  background: green;
+  border-radius: 50%;
+}
+
+input[type=radio]:checked::before {
+  visibility: visible;
+}
+
+input[type=radio]:disabled {
+  border-color: black;
+  background: #ddd;
+  color: gray;
+}
+
+#once {
+  margin-left: 50px;
+}
+@media (max-width: 320px) {
+  #once {
+    margin-left: 26px;
+  }
 }
 
 /*# sourceMappingURL=donate.css.map */
