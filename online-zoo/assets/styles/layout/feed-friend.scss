@@ -80,6 +80,10 @@
         line-height: 120%;
         text-align: center;
         color: #FE9013;
+        margin-left: -14px;
+        @media(max-width: 640px) {
+            margin-left: 0px;
+        }
         @media(max-width: 320px) {
             font-size: 24px;
         }
@@ -143,7 +147,7 @@
                 text-transform: uppercase;
                 color: #000000;
                 @media(max-width: 1000px) {
-                    margin: 58px 16px 0px 0px;
+                    margin: 40px 16px 0px 0px;
                 }
                 @media(max-width: 640px) {
                     margin: 56px 10px 0px 0px;
@@ -420,12 +424,15 @@
         font-size: 16px;
         line-height: 140%;
         color: #333B41;
-        margin: 25px 26px 31px 0px;
+        margin: 20px 26px 31px 0px;
         label {
             @media(max-width: 320px) {
                 margin-left: 5px;
                 margin-right: 21px;
             }
+        }
+        @media(max-width: 1000px) {
+            margin: 26px 26px 31px 0px;
         }
         @media(max-width: 640px) {
             margin: 30px 26px 31px 0px;
@@ -449,6 +456,7 @@
 .feed-friend__button {
     padding: 16px 74px;
     border-radius: 25px;
+    margin-left: 10px;
     @media(max-width: 640px) {
         margin-left: 8px;
     }
