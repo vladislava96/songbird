@@ -1,0 +1,17 @@
+.button-main {
+    display: block;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 1s ease;
+    &:hover {
+        cursor: pointer;
+        background: linear-gradient(113.96deg, $hover-color-btn 1.49%, $hover-color-btn 101.44%);
+    }
+    &:active {
+        cursor: pointer;
+        background: linear-gradient(113.96deg, #4B9200 1.49%, #4B9200 101.44%);
+    }
+}
