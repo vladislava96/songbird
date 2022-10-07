@@ -288,6 +288,12 @@
   line-height: 120%;
   text-align: center;
   color: #FE9013;
+  margin-left: -14px;
+}
+@media (max-width: 640px) {
+  .feed-friend__feed h2 {
+    margin-left: 0px;
+  }
 }
 @media (max-width: 320px) {
   .feed-friend__feed h2 {
@@ -371,7 +377,7 @@
 }
 @media (max-width: 1000px) {
   .feed-friend__feed .feed-friend__diet-day .feed-friend__number .feed-friend__main-number {
-    margin: 58px 16px 0px 0px;
+    margin: 40px 16px 0px 0px;
   }
 }
 @media (max-width: 640px) {
@@ -703,12 +709,17 @@
   font-size: 16px;
   line-height: 140%;
   color: #333B41;
-  margin: 25px 26px 31px 0px;
+  margin: 20px 26px 31px 0px;
 }
 @media (max-width: 320px) {
   .feed-friend__input-amount .feed-friend__input-radio label {
     margin-left: 5px;
     margin-right: 21px;
+  }
+}
+@media (max-width: 1000px) {
+  .feed-friend__input-amount .feed-friend__input-radio {
+    margin: 26px 26px 31px 0px;
   }
 }
 @media (max-width: 640px) {
@@ -736,6 +747,7 @@
 .feed-friend__button {
   padding: 16px 74px;
   border-radius: 25px;
+  margin-left: 10px;
 }
 @media (max-width: 640px) {
   .feed-friend__button {
@@ -1000,7 +1012,7 @@
 }
 @media (max-width: 1000px) {
   .footer__menu {
-    margin-left: 50px;
+    margin-left: 63px;
   }
 }
 @media (max-width: 790px) {
