@@ -73,7 +73,8 @@ export default class Player {
   stop() {
     this.isPlay = false;  
     this.audio.pause();
-    this.play.classList.toggle('pause');
+    this.play.classList.remove('pause');
+    this.play.classList.add('play');
     clearInterval(this.timerId);
   }
 }

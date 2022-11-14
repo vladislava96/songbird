@@ -19,6 +19,8 @@ let answerData;
 let SCORE = 0;
 let questionSong = '';
 let questionPlayer;
+let answered = false;
+let descriptionPlayer;
 
 class Sound {
   constructor(src) {
@@ -85,34 +87,39 @@ answerOptionsList.addEventListener('click', (event) => {
       answerData = birdData
     }
   }
-
-  if (QUESTION === ANSWER) {
-    console.log("victory")
-    getVictory()
+  if (!answered) {
     
-    SCORE += levelScore;
-    scoreHtml.textContent = 'SCORE:' + SCORE;
-    
-    btn.classList = 'answer-options__btn answer-options__btn_true';
+    if (QUESTION === ANSWER) {
+      console.log("victory")
+      getVictory()
 
-    questionPlayer.stop();
+      answered = true;
 
-    let sound = new Sound('./audio/victory.mp3');
-    sound.play();
+      SCORE += levelScore;
+      scoreHtml.textContent = 'SCORE:' + SCORE;
 
-  } else {
-    console.log("no")
-    minus += 1;
-    levelScore = 5 - minus;
+      btn.classList = 'answer-options__btn answer-options__btn_true';
 
-    let sound = new Sound('./audio/false.mp3');
-    sound.play();
+      questionPlayer.stop();
 
-    btn.classList = 'answer-options__btn answer-options__btn_false';
-    if (levelScore < 0) {
-      levelScore = 0;
+      let sound = new Sound('./audio/victory.mp3');
+      sound.play();
+
+    } else {
+      console.log("no")
+      minus += 1;
+      levelScore = 5 - minus;
+
+      let sound = new Sound('./audio/false.mp3');
+      sound.play();
+
+      btn.classList = 'answer-options__btn answer-options__btn_false';
+      if (levelScore < 0) {
+        levelScore = 0;
+      }
     }
   }
+  
 
   console.log('levelScore:' + levelScore)
   console.log('SCORE:' + SCORE)
@@ -136,7 +143,7 @@ answerOptionsList.addEventListener('click', (event) => {
   birdText.className = 'bird-description__text';
 
   birdDescription.append(birdImg, birdName, birdSpecies, birdText);
-  new Player(answerData.audio, birdDescription);
+  descriptionPlayer = new Player(answerData.audio, birdDescription);
 
 })
 
@@ -157,6 +164,8 @@ nextLevelBtm.addEventListener('click', () => {
   nextLevelBtm.classList = 'next-level';
   minus = 0;
   levelScore = 5;
+  answered = false;
+  descriptionPlayer.stop();
   
   console.log("click")
 
@@ -205,6 +214,7 @@ restart.addEventListener('click', () => {
   QUESTION = '';
   answerData;
   SCORE = 0;
+  answered = false;
 
   questionItems[LEVEL - 1].classList.add('question-item_active');
   scoreHtml.textContent = 'SCORE:0';
@@ -217,4 +227,5 @@ restart.addEventListener('click', () => {
 
   generateAnswers(LEVEL)
   generateSong(LEVEL)
+  
 })
