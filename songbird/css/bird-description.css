@@ -1,0 +1,28 @@
+.bird-description {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.bird-description__img {
+  height: 100px;
+}
+
+@media(max-width: 600px) {
+
+  .bird-description {
+    font-size: 12px;
+  }
+
+}
+
+@media(max-width: 400px) {
+
+  .current-question__bird-photo {
+    display: none;
+  }
+  
+}
+
+.bird-description__img {
+  height: 150px;
+}

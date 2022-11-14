@@ -1,0 +1,49 @@
+.current-question {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-items: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100%;
+}
+
+@media(max-width: 800px) {
+  .current-question {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+  }
+}
+
+@media(max-width: 600px) {
+  .current-question {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+.current-question__bird-name {
+  margin-bottom: 20px;
+}
+
+.current-question__img {
+  height: 200px;
+}
+
+@media(max-width: 800px) {
+  .current-question__img {
+    height: 100px;
+  }
+}
+
+@media(max-width: 400px) {
+
+  .current-question__img {
+    height: 100px;
+  }
+
+  .current-question {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+  }
+  
+}

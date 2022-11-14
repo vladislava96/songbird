@@ -1,0 +1,81 @@
+@import './css/top-panel.css';
+@import './css/player.css';
+@import './css/current-question.css';
+@import './css/answer-options.css';
+@import './css/bird-description.css';
+@import './css/end-message.css';
+
+
+.quiz-page {
+  background-color: rgb(30, 30, 30);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.quiz {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20% 30% 44% 6%;
+  grid-gap: 20px;
+  width: 80vw;
+  height: 86vh;
+  margin: 0 auto;
+}
+
+@media(max-width: 800px) {
+
+  .quiz {
+    grid-template-rows: 20% 35% 44% 6%;
+  }
+
+}
+
+
+@media(max-width: 600px) {
+
+  .quiz {
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 25% 15% 30% 6%;
+  }
+  
+}
+
+.next-level {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  
+  background-color: rgb(49, 49, 49);
+  color: white;
+  border-radius: 10px;
+}
+
+.next-level_active {
+  background-color:  rgb(56, 109, 29);
+  color: rgb(49, 49, 49);
+}
+
+@media(max-width: 600px) {
+
+  .next-level {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+}
+
+.block {
+  background-color: rgb(49, 49, 49);
+  color: white;
+  border-radius: 5px;
+}
+
+@media(max-width: 400px) {
+  
+  .quiz {
+    height: 180vh;
+    grid-template-rows: 15% 10% 10% 20% 5%;
+  }
+
+}

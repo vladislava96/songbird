@@ -1,0 +1,203 @@
+.main-page {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+}
+
+.video-background {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s ease;
+  
+}
+
+.video-background__blackout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video-background > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  padding: 50px 70px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+@media(max-width: 750px) {
+
+  .header {
+    padding: 30px 50px;
+  }
+
+}
+@media(max-width: 450px) {
+
+  .header {
+    padding: 20px 30px;
+  }
+
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav {
+  width: 25%;
+}
+@media(max-width: 1400px) {
+
+  .nav {
+    width: 35%;
+  }
+
+}
+@media(max-width: 1000px) {
+
+  .nav {
+    width: 50%;
+  }
+
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+@media(max-width: 750px) {
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+}
+.nav__item {
+  display: inline-block;
+  list-style-type: none;
+}
+@media(max-width: 750px) {
+
+  .nav__item {
+    text-align: end;
+  }
+
+}
+
+.nav__link {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.nav__link:hover {
+  color: rgb(102, 187, 60);
+}
+
+.nav__link_active {
+  color: rgb(102, 187, 60);
+}
+
+.main {
+  position: absolute;
+  top: 300px;
+  width: 40%;
+  z-index: 10;
+  padding: 70px;
+}
+
+@media(max-width: 750px) {
+
+  .main {
+    padding: 10px 50px;
+  }
+
+}
+@media(max-width: 450px) {
+
+  .main {
+    top: 150px;
+    padding: 20px 30px;
+  }
+
+}
+
+.description {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  letter-spacing: 8px;
+}
+@media(max-width: 450px) {
+
+  .description  {
+    font-size: 18px;
+  }
+
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 50px 70px;
+  z-index: 10;
+}
+@media(max-width: 750px) {
+
+  .footer {
+    padding: 30px 50px;
+  }
+
+}
+@media(max-width: 450px) {
+
+  .footer {
+    padding: 20px 30px;
+  }
+
+}
+.school-logo__img {
+  width: 150px;
+  background-color: rgba(225, 225, 225, 0.2);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.author {
+  color: rgb(134, 134, 134);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  letter-spacing: 5px;
+  padding-left: 30px;
+  text-align: end;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quiz.css">
+  <title>Document</title>
+</head>
+<body class="quiz-page">
+  <div class="quiz">
+    <div class="top-panel">
+      <div class="top-panel__row">
+        <div class="logo"><a href="main.html">SONG BIRD</a></div>
+        <div class="score">Score: 0</div>
+      </div>
+      <ul class="questions-list">
+        <li class="question-item">
+          Разминка
+        </li>
+        <li class="question-item">
+          Воробьиные
+        </li>
+        <li class="question-item">
+          Лесные птицы
+        </li>
+        <li class="question-item">
+          Певчие птицы
+        </li>
+        <li class="question-item">
+          Хищные птицы
+        </li>
+        <li class="question-item">
+          Морские птицы
+        </li>
+      </ul>
+    </div>
+    <div class="current-question block">
+      <div class="current-question__bird-photo">
+        <img class="current-question__img" src="./img/bird06.jpg">
+      </div>
+      <div class="current-question-col">
+        <div class="current-question__bird-name">
+          *****
+        </div>
+      </div>
+    </div>
+    <div class="answer-options block">
+      <ul class="answer-options__list">
+      </ul>
+    </div>
+    <div class="bird-description block">
+      Послушайте плеер. Выберите птицу из списка.
+    </div>
+    <button class="next-level" disabled>
+      Next level
+    </button>
+    <div class="end-message block">
+    </div>
+  </div>
+  <script type="module" src="quize.js"></script>
+</body>
+</html>
