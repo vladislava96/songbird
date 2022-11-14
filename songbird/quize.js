@@ -79,9 +79,12 @@ answerOptionsList.addEventListener('click', (event) => {
   ANSWER = event.target.textContent;
   
   let btn = event.target.querySelector('span');
-
-  console.log(btn)
   
+  console.log(btn)
+  if (descriptionPlayer) {
+    descriptionPlayer.stop()
+  }
+
   for (let birdData of birdsData[LEVEL - 1]) {
     if (birdData.name === ANSWER) {
       answerData = birdData
@@ -143,8 +146,9 @@ answerOptionsList.addEventListener('click', (event) => {
   birdText.className = 'bird-description__text';
 
   birdDescription.append(birdImg, birdName, birdSpecies, birdText);
+  
   descriptionPlayer = new Player(answerData.audio, birdDescription);
-
+  
 })
 
 const currentQuestionBirdName = document.querySelector('.current-question__bird-name');
@@ -166,6 +170,7 @@ nextLevelBtm.addEventListener('click', () => {
   levelScore = 5;
   answered = false;
   descriptionPlayer.stop();
+  questionPlayer.stop();
   
   console.log("click")
 
