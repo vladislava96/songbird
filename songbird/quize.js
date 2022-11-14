@@ -17,7 +17,8 @@ let ANSWER = '';
 let QUESTION = '';
 let answerData;
 let SCORE = 0;
-
+let questionSong = '';
+let questionPlayer;
 
 class Sound {
   constructor(src) {
@@ -61,11 +62,12 @@ function generateSong(level) {
   QUESTION = '';
   let randomNumber = Math.floor(Math.random() * (5 - 1)) + 0;
   QUESTION = birdsData[level - 1][randomNumber].name;
-  let song = birdsData[level - 1][randomNumber].audio;
-  new Player(song, currentQuestionCol);
+  questionSong = birdsData[level - 1][randomNumber].audio;
+  questionPlayer = new Player(questionSong, currentQuestionCol)
 }
 
 generateSong(LEVEL)
+
 
 let minus = 0;
 let levelScore = 5;
@@ -91,6 +93,7 @@ answerOptionsList.addEventListener('click', (event) => {
     SCORE += levelScore;
     scoreHtml.textContent = 'SCORE:' + SCORE;
     btn.classList = 'answer-options__btn answer-options__btn_true';
+    questionPlayer.stop();
     let sound = new Sound('./audio/victory.mp3');
     sound.play();
 

@@ -70,6 +70,12 @@ export default class Player {
     this.progress.style.background = `linear-gradient(to right, #386D1D 0%, #386D1D ${persent}%, #FFFFFF ${persent}%, #FFFFFF 100%)`;
     this.progress.value = persent;
   }
+  stop() {
+    this.isPlay = false;  
+    this.audio.pause();
+    this.play.classList.toggle('pause');
+    clearInterval(this.timerId);
+  }
 }
 
 
