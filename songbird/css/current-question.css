@@ -6,12 +6,13 @@
   grid-column-start: 1;
   grid-column-end: 3;
   width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 950px) {
   .current-question {
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
   }
 }
 
@@ -19,8 +20,10 @@
   .current-question {
     grid-column-start: 1;
     grid-column-end: 2;
+    padding: 10px;
   }
 }
+
 .current-question__bird-name {
   margin-bottom: 20px;
 }
@@ -29,9 +32,10 @@
   height: 200px;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 950px) {
   .current-question__img {
-    height: 100px;
+    height: 150px;
+    margin-bottom: 10px;
   }
 }
 
@@ -39,11 +43,6 @@
 
   .current-question__img {
     height: 100px;
-  }
-
-  .current-question {
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
   }
   
 }

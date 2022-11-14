@@ -13,28 +13,18 @@
 .quiz {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20% 30% 44% 6%;
   grid-gap: 20px;
   width: 80vw;
   height: 86vh;
   margin: 0 auto;
 }
 
-@media(max-width: 800px) {
-
-  .quiz {
-    grid-template-rows: 20% 35% 44% 6%;
-  }
-
-}
-
-
 @media(max-width: 600px) {
 
   .quiz {
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 15% 25% 15% 30% 6%;
+    grid-gap: 10px;
   }
   
 }
@@ -45,6 +35,7 @@
   align-items: center;
   grid-column-start: 1;
   grid-column-end: 3;
+  padding: 10px;
   
   background-color: rgb(49, 49, 49);
   color: white;
@@ -69,13 +60,4 @@
   background-color: rgb(49, 49, 49);
   color: white;
   border-radius: 5px;
-}
-
-@media(max-width: 400px) {
-  
-  .quiz {
-    height: 180vh;
-    grid-template-rows: 15% 10% 10% 20% 5%;
-  }
-
 }

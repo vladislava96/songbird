@@ -7,6 +7,12 @@
   outline: none;
   -webkit-appearance: none;
 }
+@media(max-width: 500px) {
+  .progress {
+    height: 4px;
+    width: 150px;
+  }
+}
 
 .progress::-webkit-slider-thumb {
   width: 0px;
@@ -26,6 +32,13 @@
 .progress-time {
   margin-left: 20px
 }
+@media(max-width: 1050px) {
+  .progress-time {
+    font-size: 12px;
+    margin-left: 5px
+  }
+}
+
 
 .player-icon {
   width: 32px;
@@ -58,6 +71,14 @@
   background-size: 40px 40px;
   background-image: url("../svg/play.svg");
   margin-right: 20px;
+}
+@media(max-width: 1050px) {
+  .play {
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    margin-right: 5px;
+  }
 }
 
 .pause {

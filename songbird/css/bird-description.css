@@ -5,6 +5,7 @@
 
 .bird-description__img {
   height: 100px;
+  margin-bottom: 10px;
 }
 
 @media(max-width: 600px) {
@@ -15,14 +16,10 @@
 
 }
 
-@media(max-width: 400px) {
-
-  .current-question__bird-photo {
-    display: none;
-  }
-  
-}
-
 .bird-description__img {
   height: 150px;
+}
+
+.bird-description__text {
+  margin: 10px 0;
 }
