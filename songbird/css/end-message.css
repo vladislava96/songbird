@@ -2,4 +2,16 @@
   display: none;
   grid-column-start: 1;
   grid-column-end: 3;
+  padding: 20px;
+  font-size: 22px;
+  text-align: center;
+}
+.restart-btn {
+  display: block;
+  width: 70%;
+  padding: 10px;
+  background-color: rgb(56, 109, 29);
+  border-color: none;
+  border-radius: 5px;
+  margin: 20px auto;
 }

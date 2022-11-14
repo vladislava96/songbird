@@ -177,9 +177,10 @@ nextLevelBtm.addEventListener('click', () => {
     if (SCORE === 30) {
       endMessage.textContent = `Поздравляю! Вы набрали максимальный балл.`
     } else {
-      endMessage.textContent = `Победа! Вы набрали ${SCORE} баллов из возможных 30. Пройти викторину еще раз?`
+      endMessage.innerHTML = `<p>ПОЗДРАВЛЯЮ!</p> Вы набрали ${SCORE} баллов из возможных 30. <p>Пройти викторину еще раз?</p>`
       
       restart.textContent = 'Начать заново';
+      restart.className = 'restart-btn';
       endMessage.appendChild(restart);
     }
     
