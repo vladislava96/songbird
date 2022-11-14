@@ -28,7 +28,7 @@ export default class Player {
     this.timerId = null;
 
     this.play.addEventListener('click', this.toggleBtn.bind(this));
-    this.audio.addEventListener('timeupdate', this.progressLine, false)
+    this.audio.addEventListener('timeupdate', this.progressLine.bind(this), false)
   }
 
   playAudio() {
@@ -37,7 +37,7 @@ export default class Player {
     if (!this.isPlay) {
       this.isPlay = true;
       this.audio.play();
-      this.timerId = setInterval(function() {
+      this.timerId = setInterval(() => {
 
         let audioTimeRound = Math.round(this.audio.currentTime);
         let audioLength = Math.round(this.audio.duration);

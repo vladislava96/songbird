@@ -92,8 +92,11 @@ answerOptionsList.addEventListener('click', (event) => {
     
     SCORE += levelScore;
     scoreHtml.textContent = 'SCORE:' + SCORE;
+    
     btn.classList = 'answer-options__btn answer-options__btn_true';
+
     questionPlayer.stop();
+
     let sound = new Sound('./audio/victory.mp3');
     sound.play();
 
