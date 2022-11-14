@@ -8,7 +8,6 @@
   width: 100vw;
   height: 100vh;
   transition: all 1s ease;
-  
 }
 
 .video-background__blackout {
@@ -103,7 +102,10 @@
   .nav__item {
     text-align: end;
   }
-
+  .nav__item:not(:first-child){
+    margin-top: 10px;
+  }
+  
 }
 
 .nav__link {
@@ -114,6 +116,7 @@
   cursor: pointer;
   transition: all 0.5s ease;
 }
+
 .nav__link:hover {
   color: rgb(102, 187, 60);
 }
@@ -124,23 +127,15 @@
 
 .main {
   position: absolute;
-  top: 300px;
+  top: calc(50% - 100px);
   width: 40%;
   z-index: 10;
   padding: 70px;
 }
 
-@media(max-width: 750px) {
-
-  .main {
-    padding: 10px 50px;
-  }
-
-}
 @media(max-width: 450px) {
 
   .main {
-    top: 150px;
     padding: 20px 30px;
   }
 
