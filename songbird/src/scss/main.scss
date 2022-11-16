@@ -37,22 +37,18 @@
   padding: 50px 70px;
   box-sizing: border-box;
   z-index: 10;
-}
 
-@media(max-width: 750px) {
-
-  .header {
+  @media(max-width: 750px) {
     padding: 30px 50px;
   }
 
-}
-@media(max-width: 450px) {
-
-  .header {
+  @media(max-width: 450px) {
     padding: 20px 30px;
   }
 
+
 }
+
 
 .logo {
   color: white;
@@ -61,47 +57,43 @@
   letter-spacing: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .nav {
   width: 25%;
-}
-@media(max-width: 1400px) {
 
-  .nav {
+  @media(max-width: 1400px) {
     width: 35%;
   }
 
-}
-@media(max-width: 1000px) {
-
-  .nav {
+  @media(max-width: 1000px) {
     width: 50%;
   }
-
 }
+
 .nav__list {
   display: flex;
   justify-content: space-between;
   margin: 0;
-}
 
-@media(max-width: 750px) {
-
-  .nav__list {
+  @media(max-width: 750px) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
 
 }
+
 .nav__item {
   display: inline-block;
   list-style-type: none;
-}
-@media(max-width: 750px) {
 
-  .nav__item {
+  @media(max-width: 750px) {
     text-align: end;
   }
+}
+
+@media(max-width: 750px) {
+
   .nav__item:not(:first-child){
     margin-top: 10px;
   }
@@ -115,10 +107,10 @@
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
   transition: all 0.5s ease;
-}
 
-.nav__link:hover {
-  color: rgb(102, 187, 60);
+  &:hover {
+    color: rgb(102, 187, 60);
+  }
 }
 
 .nav__link_active {
@@ -131,14 +123,10 @@
   width: 40%;
   z-index: 10;
   padding: 70px;
-}
 
-@media(max-width: 450px) {
-
-  .main {
+  @media(max-width: 450px) {
     padding: 20px 30px;
   }
-
 }
 
 .description {
@@ -147,14 +135,12 @@
   font-weight: 100;
   font-size: 22px;
   letter-spacing: 8px;
-}
-@media(max-width: 450px) {
 
-  .description  {
+  @media(max-width: 450px) {
     font-size: 18px;
   }
-
 }
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -165,21 +151,16 @@
   box-sizing: border-box;
   padding: 50px 70px;
   z-index: 10;
-}
-@media(max-width: 750px) {
 
-  .footer {
+  @media(max-width: 750px) {
     padding: 30px 50px;
   }
 
-}
-@media(max-width: 450px) {
-
-  .footer {
+  @media(max-width: 450px) {
     padding: 20px 30px;
   }
-
 }
+
 .school-logo__img {
   width: 150px;
   background-color: rgba(225, 225, 225, 0.2);

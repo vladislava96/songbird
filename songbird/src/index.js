@@ -1,3 +1,5 @@
+import './style.scss'
+
 import birdsData from './js/dirds-data.js';
 import Player from './js/audio-player.js';
 
@@ -62,7 +64,7 @@ generateAnswers(LEVEL)
 
 function generateSong(level) {
   QUESTION = '';
-  let randomNumber = Math.floor(Math.random() * (5 - 1)) + 0;
+  let randomNumber = Math.floor(Math.random() * 6);
   QUESTION = birdsData[level - 1][randomNumber].name;
   questionSong = birdsData[level - 1][randomNumber].audio;
   questionPlayer = new Player(questionSong, currentQuestionCol)
@@ -105,7 +107,7 @@ answerOptionsList.addEventListener('click', (event) => {
 
       questionPlayer.stop();
 
-      let sound = new Sound('./audio/victory.mp3');
+      let sound = new Sound('./dist/audio/victory.mp3');
       sound.play();
 
     } else {
@@ -113,7 +115,7 @@ answerOptionsList.addEventListener('click', (event) => {
       minus += 1;
       levelScore = 5 - minus;
 
-      let sound = new Sound('./audio/false.mp3');
+      let sound = new Sound('./dist/audio/false.mp3');
       sound.play();
 
       btn.classList = 'answer-options__btn answer-options__btn_false';
@@ -176,7 +178,7 @@ nextLevelBtm.addEventListener('click', () => {
 
   birdDescription.innerHTML = 'Послушайте плеер. Выберите птицу из списка.';
   currentQuestionBirdName.textContent = '*****';
-  currentQuestionCol.removeChild(currentQuestionCol.querySelector('.player'))
+  currentQuestionCol.removeChild(currentQuestionCol.querySelector('.audio-player'))
   currentQuestionImg.src = './img/bird06.jpg';
 
   questionItems[LEVEL - 1].classList.remove('question-item_active')

@@ -8,20 +8,17 @@
   width: 100%;
   box-sizing: border-box;
   padding: 20px;
-}
 
-@media(max-width: 950px) {
-  .current-question {
+  @media(max-width: 950px) {
     grid-template-columns: 100%;
   }
-}
-
-@media(max-width: 600px) {
-  .current-question {
+  
+  @media(max-width: 600px) {
     grid-column-start: 1;
     grid-column-end: 2;
     padding: 10px;
   }
+
 }
 
 .current-question__bird-name {
@@ -30,19 +27,13 @@
 
 .current-question__img {
   height: 200px;
-}
 
-@media(max-width: 950px) {
-  .current-question__img {
+  @media(max-width: 950px) {
     height: 150px;
     margin-bottom: 10px;
   }
-}
 
-@media(max-width: 400px) {
-
-  .current-question__img {
+  @media(max-width: 400px) {
     height: 100px;
   }
-  
 }

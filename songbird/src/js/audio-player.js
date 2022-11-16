@@ -154,9 +154,9 @@ export default class Player {
     }
 
     if (this.audio.muted) {
-        this.soundBtn.style.backgroundImage = "url('../svg/soundMuted.svg')";
+        this.soundBtn.style.backgroundImage = "url('./svg/soundMuted.svg')";
     } else if(this.audio.muted === false){
-        this.soundBtn.style.backgroundImage = "url('../svg/sound.svg')";
+        this.soundBtn.style.backgroundImage = "url('./svg/sound.svg')";
     }
 
   }

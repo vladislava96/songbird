@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: flex-start;
 }
+
 .song-control {
   display: flex;
 }
@@ -36,23 +37,19 @@
   width: 40px;
   height: 40px;
   background-size: 40px 40px;
-  background-image: url("../svg/play.svg");
+  background-image: url("./svg/play.svg");
   margin-right: 20px;
-}
 
-@media(max-width: 1050px) {
-
-  .play {
+  @media(max-width: 1050px) {
     width: 30px;
     height: 30px;
     background-size: 30px 30px;
     margin-right: 10px;
   }
-
 }
 
 .pause {
-  background-image: url("../svg/pause.svg");
+  background-image: url("./svg/pause.svg");
 }
 
 .time-bar {
@@ -68,39 +65,23 @@
   outline: none;
   margin-top: 20px;
   -webkit-appearance: none;
-}
 
-@media(max-width: 1250px) {
-
-  .progress {
+  @media(max-width: 1250px) {
     width: 300px;
   }
 
-}
-
-@media(max-width: 1050px) {
-
-  .progress {
+  @media(max-width: 1050px) {
     margin-top: 15px;
   }
 
-}
-
-@media(max-width: 800px) {
-
-  .progress {
+  @media(max-width: 800px) {
     width: 200px;
   }
 
-}
-
-@media(max-width: 500px) {
-
-  .progress {
+  @media(max-width: 500px) {
     height: 4px;
     width: 150px;
   }
-
 }
 
 .progress::-webkit-slider-thumb {
@@ -115,26 +96,22 @@
 .progress-time {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px
-}
+  margin-top: 10px;
 
-@media(max-width: 1050px) {
-
-  .progress-time {
+  @media(max-width: 1050px) {
     font-size: 12px;
     margin-left: 5px
   }
-
 }
 
 .sound {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   margin: 10px 10px 0;
   border: none;
   background-color: none;
-  background-image: url('../svg/sound.svg');
+  background-image: url('./svg/sound.svg');
 }
 
 .progress-sound {

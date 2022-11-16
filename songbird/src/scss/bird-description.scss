@@ -1,24 +1,17 @@
 .bird-description {
   box-sizing: border-box;
   padding: 20px;
-}
 
-.bird-description__img {
-  height: 100px;
-  margin-bottom: 10px;
-}
-
-@media(max-width: 600px) {
-
-  .bird-description {
+  @media(max-width: 600px) {
     font-size: 12px;
   }
-
 }
 
 .bird-description__img {
   height: 150px;
+  margin-bottom: 10px;
 }
+
 
 .bird-description__text {
   margin: 10px 0;

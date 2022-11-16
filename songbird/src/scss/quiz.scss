@@ -1,15 +1,8 @@
-@import './css/top-panel.css';
-@import './css/player.css';
-@import './css/current-question.css';
-@import './css/answer-options.css';
-@import './css/bird-description.css';
-@import './css/end-message.css';
-
-
 .quiz-page {
   background-color: rgb(30, 30, 30);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .quiz {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -17,16 +10,12 @@
   width: 80vw;
   height: 86vh;
   margin: 0 auto;
-}
 
-@media(max-width: 600px) {
-
-  .quiz {
+  @media(max-width: 600px) {
     height: 90vh;
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
-  
 }
 
 .next-level {
@@ -40,20 +29,16 @@
   background-color: rgb(49, 49, 49);
   color: white;
   border-radius: 10px;
+
+  @media(max-width: 600px) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
 }
 
 .next-level_active {
   background-color:  rgb(56, 109, 29);
-  color: rgb(49, 49, 49);
-}
-
-@media(max-width: 600px) {
-
-  .next-level {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
+  color: white;
 }
 
 .block {

@@ -1,15 +1,15 @@
 .answer-options__item {
   list-style-type: none;
   padding: 10px;
-  border-bottom: solid 0.1px rgb(70, 70, 70)
-}
+  border-bottom: solid 0.1px rgb(70, 70, 70);
 
-.answer-options__item:hover {
-  background-color: rgb(62, 62, 62);
-}
+  &:hover {
+    background-color: rgb(62, 62, 62);
+  }
 
-.answer-options__item:last-child {
-  border-bottom: none;
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .answer-options__list {
@@ -18,6 +18,11 @@
   height: 100%;
   padding: 0;
   margin: 0;
+
+  @media(max-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .answer-options__btn {
@@ -42,11 +47,6 @@
   .answer-options {
     font-size: 12px;
     padding: 0px;
-  }
-
-  .answer-options__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 
   .answer-options__item:nth-child(5) {
