@@ -1,44 +1,11 @@
-
-.progress {
-  background: linear-gradient(to right, #386D1D 0%, #386D1D 0%, #FFFFFF 0%, #FFFFFF 100%);
-  border-radius: 0px;
-  height: 4px;
-  width: 200px;
-  outline: none;
-  -webkit-appearance: none;
-}
-@media(max-width: 500px) {
-  .progress {
-    height: 4px;
-    width: 150px;
-  }
-}
-
-.progress::-webkit-slider-thumb {
-  width: 0px;
-  height: 4px;
-  -webkit-appearance: none;
-  cursor: ew-resize;
-  background: #33ff0a;
-  transform: translate(0px, 0px);
-}
-
-.player {
+.audio-player {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
-
-.progress-time {
-  margin-left: 20px
+.song-control {
+  display: flex;
 }
-@media(max-width: 1050px) {
-  .progress-time {
-    font-size: 12px;
-    margin-left: 5px
-  }
-}
-
 
 .player-icon {
   width: 32px;
@@ -72,15 +39,95 @@
   background-image: url("../svg/play.svg");
   margin-right: 20px;
 }
+
 @media(max-width: 1050px) {
+
   .play {
     width: 30px;
     height: 30px;
     background-size: 30px 30px;
     margin-right: 5px;
   }
+
 }
 
 .pause {
   background-image: url("../svg/pause.svg");
+}
+
+.time-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress {
+  background: linear-gradient(to right, #386D1D 0%, #386D1D 0%, #FFFFFF 0%, #FFFFFF 100%);
+  border-radius: 0px;
+  height: 4px;
+  width: 400px;
+  outline: none;
+  margin-top: 20px;
+  -webkit-appearance: none;
+}
+
+@media(max-width: 500px) {
+
+  .progress {
+    height: 4px;
+    width: 150px;
+  }
+
+}
+
+.progress::-webkit-slider-thumb {
+  width: 0px;
+  height: 4px;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background: #386D1D;
+  transform: translate(0px, 0px);
+}
+
+.progress-time {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px
+}
+
+@media(max-width: 1050px) {
+
+  .progress-time {
+    font-size: 12px;
+    margin-left: 5px
+  }
+
+}
+
+.sound {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px 0;
+  border: none;
+  background-color: none;
+  background-image: url('../svg/sound.svg');
+}
+
+.progress-sound {
+  background: linear-gradient(to right, #386D1D 0%, #386D1D 40%, #FFFFFF 40%, #FFFFFF 100%);
+  border-radius: 0px;
+  height: 4px;
+  width: 50px;
+  outline: none;
+  transition: 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+.progress-sound::-webkit-slider-thumb {
+  width: 0px;
+  height: 4px;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background: #386D1D;
+  transform: translate(0px, 0px);
 }
