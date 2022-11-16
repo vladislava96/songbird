@@ -46,7 +46,7 @@
     width: 30px;
     height: 30px;
     background-size: 30px 30px;
-    margin-right: 5px;
+    margin-right: 10px;
   }
 
 }
@@ -68,6 +68,30 @@
   outline: none;
   margin-top: 20px;
   -webkit-appearance: none;
+}
+
+@media(max-width: 1250px) {
+
+  .progress {
+    width: 300px;
+  }
+
+}
+
+@media(max-width: 1050px) {
+
+  .progress {
+    margin-top: 15px;
+  }
+
+}
+
+@media(max-width: 800px) {
+
+  .progress {
+    width: 200px;
+  }
+
 }
 
 @media(max-width: 500px) {
