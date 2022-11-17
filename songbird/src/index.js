@@ -82,7 +82,6 @@ answerOptionsList.addEventListener('click', (event) => {
   
   let btn = event.target.querySelector('span');
   
-  console.log(btn)
   if (descriptionPlayer) {
     descriptionPlayer.stop()
   }
@@ -107,7 +106,7 @@ answerOptionsList.addEventListener('click', (event) => {
 
       questionPlayer.stop();
 
-      let sound = new Sound('./dist/audio/victory.mp3');
+      let sound = new Sound('./audio/victory.mp3');
       sound.play();
 
     } else {
@@ -115,7 +114,7 @@ answerOptionsList.addEventListener('click', (event) => {
       minus += 1;
       levelScore = 5 - minus;
 
-      let sound = new Sound('./dist/audio/false.mp3');
+      let sound = new Sound('./audio/false.mp3');
       sound.play();
 
       btn.classList = 'answer-options__btn answer-options__btn_false';
