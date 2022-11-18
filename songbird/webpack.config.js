@@ -3,10 +3,15 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    index: './src/index.js',
+    gallery: './src/gallery.js',
+    main: './src/style.scss',
+  },
   output: {
-    filename: 'main.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
   devServer: {
     static: {
@@ -51,6 +56,7 @@ module.exports = {
         { from: "src/audio", to: "audio" },
         { from: "src/index.html"},
         { from: "src/quiz.html"},
+        { from: "src/gallery.html"},
       ],
     }),
   ],

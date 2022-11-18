@@ -1,5 +1,3 @@
-import './style.scss'
-
 import birdsData from './js/dirds-data.js';
 import Player from './js/audio-player.js';
 
@@ -26,26 +24,30 @@ let descriptionPlayer;
 
 class Sound {
   constructor(src) {
-      this.sound = document.createElement("audio");
-      this.sound.src = src;
-      this.sound.setAttribute("preload", "auto");
-      this.sound.setAttribute("controls", "none");
-      this.sound.style.display = "none";
-      this.isPlay = true;
-      document.body.appendChild(this.sound);
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.sound.setAttribute("preload", "auto");
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";
+    this.isPlay = true;
+    document.body.appendChild(this.sound);
   }
 
   play() {
-      this.isPlay = true;
-      this.sound.play();
+    this.isPlay = true;
+    this.sound.play();
   }
 }
 
-questionItems[LEVEL - 1].classList.add('question-item_active')
+console.log(questionItems)
+console.log(LEVEL)
 
 function generateAnswers(level) {
-  answerOptionsList.innerHTML = '';
   
+  questionItems[LEVEL - 1].classList.add('question-item_active')
+  
+  answerOptionsList.innerHTML = '';
+
   for (let birdData of birdsData[level - 1]) {
     let li = document.createElement('li');
     li.className = 'answer-options__item';
@@ -67,11 +69,11 @@ function generateSong(level) {
   let randomNumber = Math.floor(Math.random() * 6);
   QUESTION = birdsData[level - 1][randomNumber].name;
   questionSong = birdsData[level - 1][randomNumber].audio;
+
   questionPlayer = new Player(questionSong, currentQuestionCol)
 }
 
 generateSong(LEVEL)
-
 
 let minus = 0;
 let levelScore = 5;
