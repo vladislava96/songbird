@@ -46,7 +46,6 @@
     padding: 20px 30px;
   }
 
-
 }
 
 
@@ -56,15 +55,22 @@
   font-weight: 500;
   letter-spacing: 10px;
   font-family: Arial, Helvetica, sans-serif;
+
+  @media(max-width: 550px) {
+    font-size: 18px;
+  }
+
+  @media(max-width: 400px) {
+    font-size: 16px;
+  }
 }
 
 .nav {
   width: 500px;
 
-
-  // @media(max-width: 950px) {
-  //   width: 60%;
-  // }
+  @media(max-width: 400px) {
+    font-size: 12px;
+  }
 }
 
 .nav__list {
