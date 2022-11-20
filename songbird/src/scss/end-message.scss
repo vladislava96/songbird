@@ -11,7 +11,14 @@
   width: 70%;
   padding: 10px;
   background-color: rgb(56, 109, 29);
-  border-color: none;
+  color: white;
+  border: none;
   border-radius: 5px;
   margin: 20px auto;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: rgb(70, 139, 36);
+  }
 }

@@ -29,6 +29,7 @@
   background-color: rgb(49, 49, 49);
   color: white;
   border-radius: 10px;
+  border: none;
 
   @media(max-width: 600px) {
     grid-column-start: 1;
@@ -39,6 +40,12 @@
 .next-level_active {
   background-color:  rgb(56, 109, 29);
   color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: rgb(70, 139, 36);
+  }
 }
 
 .block {
