@@ -1,5 +1,6 @@
 import birdsData from './js/dirds-data.js';
 import Player from './js/audio-player.js';
+import Sound from './js/sound.js';
 
 const answerOptionsList = document.querySelector('.answer-options__list');
 const questionItems = document.querySelectorAll('.question-item');
@@ -22,22 +23,6 @@ let questionPlayer;
 let answered = false;
 let descriptionPlayer;
 
-class Sound {
-  constructor(src) {
-    this.sound = document.createElement("audio");
-    this.sound.src = src;
-    this.sound.setAttribute("preload", "auto");
-    this.sound.setAttribute("controls", "none");
-    this.sound.style.display = "none";
-    this.isPlay = true;
-    document.body.appendChild(this.sound);
-  }
-
-  play() {
-    this.isPlay = true;
-    this.sound.play();
-  }
-}
 
 console.log(questionItems)
 console.log(LEVEL)
