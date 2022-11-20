@@ -24,7 +24,6 @@ let answered = false;
 let descriptionPlayer;
 
 
-console.log(questionItems)
 console.log(LEVEL)
 
 function generateAnswers(level) {
@@ -66,7 +65,7 @@ let levelScore = 5;
 answerOptionsList.addEventListener('click', (event) => {
   ANSWER = '';
   ANSWER = event.target.textContent;
-  
+  console.log(event.target)
   let btn = event.target.querySelector('span');
   
   if (descriptionPlayer) {
@@ -78,6 +77,7 @@ answerOptionsList.addEventListener('click', (event) => {
       answerData = birdData
     }
   }
+  
   if (!answered) {
     
     if (QUESTION === ANSWER) {
